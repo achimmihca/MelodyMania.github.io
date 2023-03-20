@@ -16,6 +16,7 @@ import CookieBanner from '../../components/CookieBanner'
 // Load translations (see https://github.com/i18next/next-language-detector/tree/main/examples/basic)
 import { makeStaticProps } from '../../lib/getStatic'
 import { getStaticPaths } from '../../lib/getStatic'
+import Image from "next/legacy/image"
 const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
 
@@ -25,7 +26,9 @@ const Home: NextPage = () =>
     return (
 
         <>
-            <NavigationSection />
+            <Image src="/img/coming-3605857_1920.jpg" alt="coming soon" layout="fill" />
+
+            {/* <NavigationSection />
             <IntroSection />
             <FeaturesSection />
             <CommunityCreatedSongsSection />
@@ -37,7 +40,7 @@ const Home: NextPage = () =>
             <DownloadCallToActionSection />
             <NewsletterSection />
             <FooterSection />
-            <CookieBanner />
+            <CookieBanner /> */}
         </>
 
     )
