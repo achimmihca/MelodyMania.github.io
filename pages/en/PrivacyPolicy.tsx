@@ -14,7 +14,7 @@ const PrivacyPolicy: NextPage = () => {
   return (
 
 <>
-    <BackToHomeNavigationSection title={ `UltraStar Play - ${t("page_privacyPolicy")}` }/>
+    <BackToHomeNavigationSection title={ `Melody Mania - ${t("page_privacyPolicy")}` }/>
     
     <section className="bg-light">
         <div className="container px-5">

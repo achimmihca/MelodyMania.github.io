@@ -15,7 +15,7 @@ const LegalNotice: NextPage = () => {
   return (
 
 <>
-    <BackToHomeNavigationSection title={ `UltraStar Play - ${t("page_legalNotice")}` }/>
+    <BackToHomeNavigationSection title={ `Melody Mania - ${t("page_legalNotice")}` }/>
     
     {/* Basic features section */}
     <section className="bg-light">
