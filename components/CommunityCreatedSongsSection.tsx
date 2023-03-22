@@ -45,7 +45,7 @@ const CommunityCreatedSongsSection = () => {
                     <SingIdeaEntry title={ t("communityCreatedSongs_games") } image="/img/controller-1784573.svg"/>
                     <SingIdeaEntry title={ t("communityCreatedSongs_vocaloid") } image="/img/sing-570519.png"/>
                     <SingIdeaEntry title={ t("communityCreatedSongs_event") } image="/img/halloween-6784081.jpg"/>
-                    <SingIdeaEntry title={ t("communityCreatedSongs_regional") } image="/img/chorus-5977187-cut.jpg"/>
+                    <SingIdeaEntry title={ t("communityCreatedSongs_regional") } image="/img/singer-250933_1920-cut.jpg"/>
                 </div>
             </div>
         </section>

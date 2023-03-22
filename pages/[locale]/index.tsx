@@ -17,6 +17,7 @@ import CookieBanner from '../../components/CookieBanner'
 import { makeStaticProps } from '../../lib/getStatic'
 import { getStaticPaths } from '../../lib/getStatic'
 import Image from "next/legacy/image"
+import ComingSoonSection from '../../components/ComingSoonSection'
 const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
 
@@ -26,9 +27,7 @@ const Home: NextPage = () =>
     return (
 
         <>
-            <Image src="/img/coming-3605857_1920.jpg" alt="coming soon" layout="fill" />
-
-            {/* <NavigationSection />
+            <NavigationSection />
             <IntroSection />
             <FeaturesSection />
             <CommunityCreatedSongsSection />
@@ -36,11 +35,11 @@ const Home: NextPage = () =>
             <SongEditorSection />
             <CrossPlatformSection />
             <OpenSourceSection />
-            <PlannedFeaturesSection />
-            <DownloadCallToActionSection />
+            {/* <PlannedFeaturesSection /> */}
+            {/* <DownloadCallToActionSection /> */}
             <NewsletterSection />
             <FooterSection />
-            <CookieBanner /> */}
+            <CookieBanner />
         </>
 
     )

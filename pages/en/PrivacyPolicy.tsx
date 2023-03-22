@@ -21,11 +21,11 @@ const PrivacyPolicy: NextPage = () => {
             <div className="row align-items-center justify-content-center justify-content-lg-between">
                 <div className="col-12">
                     {/*---------------------------------------------------------- */}
-                    <h1>Privacy Policy for UltraStar&nbsp;Play</h1>
+                    <h1>Privacy Policy for Melody&nbsp;Mania</h1>
 
-                    <p>At UltraStar&nbsp;Play, accessible from ultrastar-play.com and from official app stores, one of our main priorities is the privacy of our
+                    <p>At Melody&nbsp;Mania, accessible from melodymania.org and from official app stores, one of our main priorities is the privacy of our
                         visitors. This Privacy Policy document contains types of information that is collected and
-                        recorded by UltraStar&nbsp;Play and how we use it.</p>
+                        recorded by Melody&nbsp;Mania and how we use it.</p>
 
                     <p>If you have additional questions or require more information about our Privacy Policy, do not
                         hesitate to contact us.</p>
@@ -34,18 +34,18 @@ const PrivacyPolicy: NextPage = () => {
                     <h2>General Data Protection Regulation (GDPR)</h2>
                     <p>We are a Data Controller of your information.</p>
 
-                    <p>UltraStar&nbsp;Play Project Developers legal basis for collecting and using the personal information
+                    <p>Melody&nbsp;Mania Project Developers legal basis for collecting and using the personal information
                         described in this Privacy Policy depends on the Personal Information we collect and the specific
                         context in which we collect the information:</p>
                     <ul>
-                        <li>UltraStar&nbsp;Play Project Developers needs to perform a contract with you</li>
-                        <li>You have given UltraStar&nbsp;Play Project Developers permission to do so</li>
-                        <li>Processing your personal information is in UltraStar&nbsp;Play Project Developers legitimate
+                        <li>Melody&nbsp;Mania Project Developers needs to perform a contract with you</li>
+                        <li>You have given Melody&nbsp;Mania Project Developers permission to do so</li>
+                        <li>Processing your personal information is in Melody&nbsp;Mania Project Developers legitimate
                             interests</li>
-                        <li>UltraStar&nbsp;Play Project Developers needs to comply with the law</li>
+                        <li>Melody&nbsp;Mania Project Developers needs to comply with the law</li>
                     </ul>
 
-                    <p>UltraStar&nbsp;Play Project Developers will retain your personal information only for as long as is
+                    <p>Melody&nbsp;Mania Project Developers will retain your personal information only for as long as is
                         necessary for the purposes set out in this Privacy Policy. We will retain and use your
                         information to the extent necessary to comply with our legal obligations, resolve disputes, and
                         enforce our policies. Our Privacy Policy was generated with the help of <a
@@ -68,7 +68,7 @@ const PrivacyPolicy: NextPage = () => {
                     {/*---------------------------------------------------------- */}
                     <h2>Log Files</h2>
 
-                    <p>UltraStar&nbsp;Play follows a standard procedure of using log files. These files log visitors when
+                    <p>Melody&nbsp;Mania follows a standard procedure of using log files. These files log visitors when
                         they visit websites. All hosting companies do this and a part of hosting services&apos; analytics.
                         The information collected by log files include internet protocol (IP) addresses, browser type,
                         Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the
@@ -80,21 +80,21 @@ const PrivacyPolicy: NextPage = () => {
                     <h2>Privacy Policies</h2>
 
                     <p>You may consult this list to find the Privacy Policy for each of the advertising partners of
-                        UltraStar&nbsp;Play.</p>
+                        Melody&nbsp;Mania.</p>
 
                     <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons
-                        that are used in their respective advertisements and links that appear on UltraStar&nbsp;Play, which
+                        that are used in their respective advertisements and links that appear on Melody&nbsp;Mania, which
                         are sent directly to users&apos; browser. They automatically receive your IP address when this
                         occurs. These technologies are used to measure the effectiveness of their advertising campaigns
                         and/or to personalize the advertising content that you see on websites that you visit.</p>
 
-                    <p>Note that UltraStar&nbsp;Play has no access to or control over these cookies that are used by
+                    <p>Note that Melody&nbsp;Mania has no access to or control over these cookies that are used by
                         third-party advertisers.</p>
 
                     {/*---------------------------------------------------------- */}
                     <h2>Third Party Privacy Policies</h2>
 
-                    <p>UltraStar&nbsp;Play&apos;s Privacy Policy does not apply to other advertisers or websites. Thus, we are
+                    <p>Melody&nbsp;Mania&apos;s Privacy Policy does not apply to other advertisers or websites. Thus, we are
                         advising you to consult the respective Privacy Policies of these third-party ad servers for more
                         detailed information. It may include their practices and instructions about how to opt-out of
                         certain options. You may find a complete list of these Privacy Policies and their links here:
@@ -111,7 +111,7 @@ const PrivacyPolicy: NextPage = () => {
                         encourage parents and guardians to observe, participate in, and/or monitor and guide their
                         online activity.</p>
 
-                    <p>UltraStar&nbsp;Play does not knowingly collect any Personal Identifiable Information from children
+                    <p>Melody&nbsp;Mania does not knowingly collect any Personal Identifiable Information from children
                         under the age of 13. If you think that your child provided this kind of information on our
                         website, we strongly encourage you to contact us immediately and we will do our best efforts to
                         promptly remove such information from our records.</p>
@@ -120,7 +120,7 @@ const PrivacyPolicy: NextPage = () => {
                     <h2>Online Privacy Policy Only</h2>
 
                     <p>Our Privacy Policy applies only to our online activities and is valid for visitors to our website
-                        with regards to the information that they shared and/or collect in UltraStar&nbsp;Play. This policy
+                        with regards to the information that they shared and/or collect in Melody&nbsp;Mania. This policy
                         is not applicable to any information collected offline or via channels other than this website.
                     </p>
 

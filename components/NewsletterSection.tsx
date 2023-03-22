@@ -23,8 +23,8 @@ const NewsletterSection = () =>
                     <input className="btn btn-primary bg-gradient mb-2" type="submit" value={ t("newsletterSection_submit") }/>
 
                     {/* Hidden fields */}
-                    {/* List token (get the token at: https://app.getresponse.com/campaign_list.html) */}
-                    <input type="hidden" name="campaign_token" value="f4cR2" />
+                    {/* List token (get the token in list settings: https://app.getresponse.com/campaign_list.html) */}
+                    <input type="hidden" name="campaign_token" value="PZBDs" />
                     {/* Add subscriber to the follow-up sequence with a specified day (optional) */}
                     <input type="hidden" name="start_day" value="0" />
                 </form>

@@ -46,8 +46,6 @@ const OpenSourceSection = () =>
 
                     <h2 className="font-alt text-center"><T i18nKey="openSourceSection_beyondThisGame_title" /></h2>
                     <p><T i18nKey="openSourceSection_beyondThisGame_p_1" /></p>
-                    <p><T i18nKey="openSourceSection_beyondThisGame_p_2" /></p>
-                    <p id="openSourceSection_beyondThisGame_p_3">{ /* content set in useEffect */}</p>
                 </div>
             </div>
         </div>

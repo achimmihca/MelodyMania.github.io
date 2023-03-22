@@ -7,7 +7,7 @@ const NavigationSection = () =>
     return <>
     <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div className="container px-5">
-            <a id="navbar-title" className="navbar-brand fw-bold" href="#page-top">UltraStar&nbsp;Play</a>
+            <a id="navbar-title" className="navbar-brand fw-bold" href="#page-top">Melody&nbsp;Mania</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i className="bi-list"></i>
@@ -22,12 +22,13 @@ const NavigationSection = () =>
                             <li><a className="dropdown-item" href="#song-editor"><T i18nKey="navigationSection_features_songEditor" /></a></li>
                             <li><a className="dropdown-item" href="#cross-platform"><T i18nKey="navigationSection_features_crossPlatform" /></a></li>
                             <li><a className="dropdown-item" href="#open-source"><T i18nKey="navigationSection_features_openSource" /></a></li>
-                            <li><a className="dropdown-item" href="#planned-features"><T i18nKey="navigationSection_features_plannedFeatures" /></a></li>
+                            {/* <li><a className="dropdown-item" href="#planned-features"><T i18nKey="navigationSection_features_plannedFeatures" /></a></li> */}
+                            <li><a className="dropdown-item" href="#newsletter"><T i18nKey="navigationSection_newsletter" /></a></li>
                         </ul>
                     </li>
                     <li className="nav-item"><a className="nav-link" href="#download"><T i18nKey="navigationSection_download" /></a></li>
-                    <li className="nav-item"><a className="nav-link" href="https://github.com/UltraStar-Deluxe/Play/wiki/Frequently-Asked-Questions-(FAQ)"><T i18nKey="navigationSection_faq" /></a></li>
-                    <li className="nav-item"><RedirectLink className="nav-link me-lg-3" href="https://ultrastar-play.com/presskit.zip"><T i18nKey="navigationSection_pressKit" /></RedirectLink></li>
+                    {/* <li className="nav-item"><a className="nav-link" href="https://github.com/UltraStar-Deluxe/Play/wiki/Frequently-Asked-Questions-(FAQ)"><T i18nKey="navigationSection_faq" /></a></li> */}
+                    {/* <li className="nav-item"><RedirectLink className="nav-link me-lg-3" href="https://melodymania.org/presskit.zip"><T i18nKey="navigationSection_pressKit" /></RedirectLink></li> */}
                     <li className="nav-item dropdown"><LanguageSwitcher /></li>
                 </ul>
             </div>

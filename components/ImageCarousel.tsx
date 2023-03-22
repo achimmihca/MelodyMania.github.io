@@ -1,11 +1,13 @@
 import Image from "next/legacy/image";
 
 const slides = [
-    "/img/carousel/DevicesWithLogo-resized.png",
-    "/img/carousel/singing-resized.jpg?version=2",
-    "/img/carousel/results-resized.jpg?version=2",
-    "/img/carousel/song-select-resized.jpg?version=2",
-    "/img/carousel/companion-app-resized.png?version=2",
+    "/img/shutterstock_1275656416.jpg",
+    "/img/logos/LogoSmallWithBackground-b.png",
+    // "/img/carousel/DevicesWithLogo-resized.png",
+    // "/img/carousel/singing-resized.jpg?version=2",
+    // "/img/carousel/results-resized.jpg?version=2",
+    // "/img/carousel/song-select-resized.jpg?version=2",
+    // "/img/carousel/companion-app-resized.png?version=2",
 ]
 
 const SlideIndicator = (props: {index: number}) => 

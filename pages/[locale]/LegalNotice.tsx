@@ -33,7 +33,7 @@ const LegalNotice: NextPage = () => {
 
                     <h2>Kontakt</h2>
                     <p>Telefon: 01575-2873216<br />
-                    E-Mail: email@ultrastar-play.com</p>
+                    E-Mail: email@melodymania.org</p>
 
                     <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
                 </div>
