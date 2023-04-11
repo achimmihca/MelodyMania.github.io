@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import type { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
-import { Mulish, Kanit } from '@next/font/google'
+import { Mulish, Kanit, Roboto, Inter } from '@next/font/google'
 
 // Load fonts
 const mulish = Mulish({
@@ -10,6 +10,14 @@ const mulish = Mulish({
     display: 'fallback',
 })
 const kanit = Kanit({
+    weight: '400',
+    display: 'fallback',
+})
+const inter = Inter({
+    weight: '400',
+    display: 'fallback',
+})
+const roboto = Roboto({
     weight: '400',
     display: 'fallback',
 })
@@ -28,6 +36,8 @@ function MyApp({ Component, pageProps }: AppProps)
             :root {
                 --mulish-font: ${mulish.style.fontFamily};
                 --kanit-font: ${kanit.style.fontFamily};
+                --inter-font: ${inter.style.fontFamily};
+                --roboto-font: ${roboto.style.fontFamily};
             }
         `}</style>
 
