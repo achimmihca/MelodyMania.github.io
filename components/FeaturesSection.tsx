@@ -13,6 +13,44 @@ const FeatureItem = (props: {icon: string, title: string, children?: React.React
     </div>
 )
 
+const featureList = [
+    "featuresSection_featureList_pitchDetection",
+    "featuresSection_featureList_customSongs",
+    "featuresSection_featureList_scoreMode",
+    "featuresSection_featureList_companionApp",
+    "featuresSection_featureList_duetSongs",
+
+    "featuresSection_featureList_teamAndTournament",
+    "featuresSection_featureList_songQueueAndMedleys",
+    "featuresSection_featureList_playlists",
+    "featuresSection_featureList_vocalsSeparation",
+    "featuresSection_featureList_deviceSupport",
+]
+
+const featureCards = [
+    // Game features
+    { icon: "bi-people", title: "featuresSection_featureCard_solosDuetsGroups" },
+    { icon: "bi-person-hearts", title: "featuresSection_featureCard_audience" },
+    { icon: "bi-link-45deg", title: "featuresSection_featureCard_scoreMode" },
+    { icon: "bi-trophy", title: "featuresSection_featureCard_teamAndTournament" },
+    { icon: "bi-fire", title: "featuresSection_featureCard_gameModifiers" },
+    { icon: "bi-stack", title: "featuresSection_featureCard_songQueueAndMedleys" },
+
+    // Technical features
+    { icon: "bi-phone", title: "featuresSection_featureCard_companionApp" },
+    { icon: "bi-mic", title: "featuresSection_featureCard_mics" },
+    { icon: "bi-collection-play", title: "featuresSection_featureCard_openSongFormat" },
+    { icon: "bi-camera", title: "featuresSection_featureCard_webcam" },
+    { icon: "bi-circle-square", title: "featuresSection_featureCard_vocalsSeparation" },
+    { icon: "bi-chat-dots", title: "featuresSection_featureCard_speechRecognition" },
+    { icon: "bi-music-note-list", title: "featuresSection_featureCard_playlistsAndFavorites" },
+    { icon: "bi-file-earmark-person", title: "featuresSection_featureCard_playerAndMicProfiles" },
+    { icon: "bi-search", title: "featuresSection_featureCard_searchAndFind" },
+    { icon: "bi-tools", title: "featuresSection_featureCard_songEditor" },
+    { icon: "bi-brush", title: "featuresSection_featureCard_themes" },
+    { icon: "bi-controller", title: "featuresSection_featureCard_controllerSupport" },
+];
+
 const FeaturesSection = () =>
 {
     const { t } = useTranslationUnescaped()
@@ -30,33 +68,35 @@ const FeaturesSection = () =>
                 <div className="row md-justify-content-center lead">
                     <div className="col-auto">
                         <ul className="item-symbol-mic">
-                            <li><T i18nKey="featuresSection_featureList_1" /></li>
-                            <li><T i18nKey="featuresSection_featureList_2" /></li>
-                            <li><T i18nKey="featuresSection_featureList_3" /></li>
-                            <li><T i18nKey="featuresSection_featureList_4" /></li>
+                            {
+                                featureList.slice(0, featureList.length / 2).map(feature =>
+                                    <li><T i18nKey={ feature } /></li>
+                                )
+                            }
                         </ul>
                     </div>
                     <div className="col-auto">
                         <ul className="item-symbol-mic">
-                            <li><T i18nKey="featuresSection_featureList_5" /></li>
-                            <li><T i18nKey="featuresSection_featureList_6" /></li>
-                            <li><T i18nKey="featuresSection_featureList_7" /></li>
-                            <li><T i18nKey="featuresSection_featureList_8" /></li>
+                        {
+                            featureList.slice(featureList.length / 2, featureList.length).map(feature =>
+                                <li><T i18nKey={ feature } /></li>
+                            )
+                        }
                         </ul>
                     </div>
                 </div>
     
                 {/* YouTube video (game teaser)  */}
-                <div className="row my-5 justify-content-center">
+                {/* <div className="row my-5 justify-content-center">
                     <div className="col-md-6">
                         <YouTubeVideo src="https://www.youtube.com/embed/4hXKOLafpDg" containerId="game-video" />
                     </div>
-                </div>
+                </div> */}
     
                 {/* Imagine fun time */}
                 <div className="row justify-content-center">
                     <div className="col-auto">
-                        <h1><T i18nKey="featuresSection_imagineList_title" /></h1>
+                        <h1 className="display-5 font-alt"><T i18nKey="featuresSection_imagineList_title" /></h1>
                     </div>
                 </div>
                 <div className="row justify-content-center lead">
@@ -81,41 +121,12 @@ const FeaturesSection = () =>
             <div className="row align-items-center">
                 <div className="container-fluid">
                     <div className="row">
-                        <FeatureItem icon="bi-phone" title={ t("featuresSection_featureCard_companionApp") }>
-                            { t("featuresSection_featureCard_companionApp_detail") }
-                        </FeatureItem>
-    
-                        <FeatureItem icon="bi-people" title={ t("featuresSection_featureCard_solosDuetsGroups") }>
-                            { t("featuresSection_featureCard_solosDuetsGroups_detail") }
-                        </FeatureItem>
-                        
-                        <FeatureItem icon="bi-collection-play" title={ t("featuresSection_featureCard_openSongFormat") }>
-                            { t("featuresSection_featureCard_openSongFormat_detail") }
-                        </FeatureItem>
-    
-                        <FeatureItem icon="bi-tools" title={ t("featuresSection_featureCard_songEditor") }>
-                            { t("featuresSection_featureCard_songEditor_detail") }
-                        </FeatureItem>
-    
-                        <FeatureItem icon="bi-music-note-list" title={ t("featuresSection_featureCard_playlistsAndFavorites") }>
-                            { t("featuresSection_featureCard_playlistsAndFavorites_detail") }
-                        </FeatureItem>
-    
-                        <FeatureItem icon="bi-person-hearts" title={ t("featuresSection_featureCard_audience") }>
-                            { t("featuresSection_featureCard_audience_detail" ) } 
-                        </FeatureItem>
-    
-                        <FeatureItem icon="bi-link-45deg" title={ t("featuresSection_featureCard_scoreMode") }>
-                            { t("featuresSection_featureCard_scoreMode_detail") }
-                        </FeatureItem>
-    
-                        <FeatureItem icon="bi-file-earmark-person" title={ t("featuresSection_featureCard_playerAndMicProfiles") }>
-                            { t("featuresSection_featureCard_playerAndMicProfiles_detail") }
-                        </FeatureItem>
-    
-                        <FeatureItem icon="bi-controller" title={ t("featuresSection_featureCard_controllerSupport") }>
-                            { t("featuresSection_featureCard_controllerSupport_detail") }
-                        </FeatureItem>
+                        {
+                            featureCards.map(featureCard => 
+                                <FeatureItem icon={featureCard.icon} title={ t(featureCard.title) }>
+                                    { t(featureCard.title + "_detail") }
+                                </FeatureItem>) 
+                        }
                     </div>
                 </div>
             </div>

@@ -26,7 +26,7 @@ const NavigationSection = () =>
                             <li><a className="dropdown-item" href="#newsletter"><T i18nKey="navigationSection_newsletter" /></a></li>
                         </ul>
                     </li>
-                    <li className="nav-item"><a className="nav-link" href="#download"><T i18nKey="navigationSection_download" /></a></li>
+                    {/* <li className="nav-item"><a className="nav-link" href="#download"><T i18nKey="navigationSection_download" /></a></li> */}
                     {/* <li className="nav-item"><a className="nav-link" href="https://github.com/UltraStar-Deluxe/Play/wiki/Frequently-Asked-Questions-(FAQ)"><T i18nKey="navigationSection_faq" /></a></li> */}
                     {/* <li className="nav-item"><RedirectLink className="nav-link me-lg-3" href="https://melodymania.org/presskit.zip"><T i18nKey="navigationSection_pressKit" /></RedirectLink></li> */}
                     <li className="nav-item dropdown"><LanguageSwitcher /></li>

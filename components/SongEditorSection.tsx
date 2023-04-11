@@ -59,6 +59,7 @@ const SongEditorSection = () =>
                                     <li><T i18nKey="songEditorSection_featureList_8" /></li>
                                     <li><T i18nKey="songEditorSection_featureList_9" /></li>
                                     <li><T i18nKey="songEditorSection_featureList_10" /></li>
+                                    <li><T i18nKey="songEditorSection_featureList_11" /></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,11 +79,11 @@ const SongEditorSection = () =>
             </div>
 
             {/* YouTube video (song editor)  */}
-            <div className="row my-5 justify-content-center">
+            {/* <div className="row my-5 justify-content-center">
                 <div className="col-lg-6">
                     <YouTubeVideo src="https://www.youtube.com/embed/osKizOyXYFQ" containerId="song-editor-video" />
                 </div>
-            </div>
+            </div> */}
         </div>
     </section>
 </>
