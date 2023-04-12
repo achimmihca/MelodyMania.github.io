@@ -42,11 +42,11 @@ const featureCards = [
     { icon: "bi-collection-play", title: "featuresSection_featureCard_openSongFormat" },
     { icon: "bi-camera", title: "featuresSection_featureCard_webcam" },
     { icon: "bi-circle-square", title: "featuresSection_featureCard_vocalsSeparation" },
-    { icon: "bi-chat-dots", title: "featuresSection_featureCard_speechRecognition" },
     { icon: "bi-music-note-list", title: "featuresSection_featureCard_playlistsAndFavorites" },
     { icon: "bi-file-earmark-person", title: "featuresSection_featureCard_playerAndMicProfiles" },
     { icon: "bi-search", title: "featuresSection_featureCard_searchAndFind" },
     { icon: "bi-tools", title: "featuresSection_featureCard_songEditor" },
+    { icon: "bi-chat-dots", title: "featuresSection_featureCard_speechRecognition" },
     { icon: "bi-brush", title: "featuresSection_featureCard_themes" },
     { icon: "bi-controller", title: "featuresSection_featureCard_controllerSupport" },
 ];
