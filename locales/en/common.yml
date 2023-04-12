@@ -28,7 +28,7 @@ easyToUseSection_p_beforeList: There is a <gradient>free song package</gradient>
 easyToUseSection_title: You Can <gradient>Have Fun in Minutes</gradient>
 featuresSection_featureCard_audience_detail: Each song can have a background video or image. A delight for both, the audience and the singers.
 featuresSection_featureCard_audience: Entertained Audience
-featuresSection_featureCard_companionApp_detail: Search and enqueue songs while others are still playing. Control and navigate the game remotely.
+featuresSection_featureCard_companionApp_detail: Search and enqueue songs while others are still singing. Use your smartphone as mic or to control the game remotely.
 featuresSection_featureCard_companionApp: Companion App
 featuresSection_featureCard_controllerSupport_detail: No need to hang around your keyboard. Just use your gamepad to control Melody&nbsp;Mania.
 featuresSection_featureCard_controllerSupport: Controller Support
@@ -40,7 +40,7 @@ featuresSection_featureCard_openSongFormat_detail: Melody&nbsp;Mania supports th
 featuresSection_featureCard_openSongFormat: Open Song Formats
 featuresSection_featureCard_playerAndMicProfiles_detail: Configure each player and device individually. Quickly reassign microphones to players.
 featuresSection_featureCard_playerAndMicProfiles: Player & Mic Profiles
-featuresSection_featureCard_playlistsAndFavorites_detail: Mark songs as favorites or organize your song library with playlists in M3U and UltraStar format.
+featuresSection_featureCard_playlistsAndFavorites_detail: Mark songs as favorites and organize your song library with playlists in M3U or UltraStar format.
 featuresSection_featureCard_playlistsAndFavorites: Playlists & Favorites
 featuresSection_featureCard_scoreMode_detail: A cooperative score mode emphasizes SINGING TOGETHER with your loved ones. Or enjoy classic karaoke without any scores.
 featuresSection_featureCard_scoreMode: Score Modes
@@ -48,9 +48,9 @@ featuresSection_featureCard_searchAndFind_detail: Handle large song collections 
 featuresSection_featureCard_searchAndFind: Advanced Search
 featuresSection_featureCard_solosDuetsGroups_detail: Sing a duet where each player has different lyrics and notes. Or throw a party and sing with up to 16 players at the same time.
 featuresSection_featureCard_solosDuetsGroups: Solos, Duets, Groups
-featuresSection_featureCard_songEditor_detail: The integrated song editor lets you create a sing-along version of any song you like - unlimited possibilities!
+featuresSection_featureCard_songEditor_detail: The integrated editor lets you create a sing-along version of any song you like - unlimited possibilities!
 featuresSection_featureCard_songEditor: Song Editor
-featuresSection_featureCard_songQueueAndMedleys_detail: Play multiple songs from the queue without interruption. Combine songs in the queue to a medley.
+featuresSection_featureCard_songQueueAndMedleys_detail: Play multiple songs from the queue without interruption. Link songs in the queue for a medley.
 featuresSection_featureCard_songQueueAndMedleys: Song Queue & Medleys
 featuresSection_featureCard_speechRecognition_detail: Use speech recognition to dictate lyrics synchronized with the music.
 featuresSection_featureCard_speechRecognition: Dictate Lyrics
@@ -69,15 +69,15 @@ featuresSection_featureList_duetSongs: Duet songs
 featuresSection_featureList_pitchDetection: Pitch detection to guide your voice
 featuresSection_featureList_playlists: Favorites and playlists
 featuresSection_featureList_scoreMode: Cooperative score mode
-featuresSection_featureList_songQueueAndMedleys: Song Queue and Medleys
+featuresSection_featureList_songQueueAndMedleys: Song queue and medleys
 featuresSection_featureList_teamAndTournament: Team and tournament game modes
 featuresSection_featureList_title: "With Melody&nbsp;Mania, <emphasize>YOU&apos;LL GET</emphasize>:"
 featuresSection_featureList_vocalsSeparation: AI powered isolation of vocals
 featuresSection_imagineList_1: Throw a singing party with family and friends
 featuresSection_imagineList_2: Break the highscore or sing duets together
 featuresSection_imagineList_3: Create the songs you want, no matter your taste in music
-featuresSection_imagineList_4: Use your smartphone as mic, no need to buy any equipment
-featuresSection_imagineList_5: Mute the vocals any song for a classic karaoke experience
+featuresSection_imagineList_4: Use your smartphone as mic, no need to buy new equipment
+featuresSection_imagineList_5: Mute the vocals of any song for a classic karaoke experience
 featuresSection_imagineList_title: Imagine what it would be like to...
 introSection_discordName: Discord
 introSection_documentationAndHelpLinks: Join the growing community on {{discordLink}}.
@@ -143,7 +143,7 @@ songEditorSection_featureList_9: Quality analysis and hints
 songEditorSection_furtherDocumentation_documentation: documentation
 songEditorSection_furtherDocumentation_video: video
 songEditorSection_furtherDocumentation: Check out the {{videoLink}} or {{documentationLink}} for details.
-songEditorSection_p_1: Create and edit songs as you please. The integrated <gradient>SONG&nbsp;EDITOR</gradient> allows to easily create a sing-along version of any song.
+songEditorSection_p_1: Create and edit songs as you please. The <gradient>INTEGRATED EDITOR</gradient> allows to easily create a sing-along version of any song.
 songEditorSection_p_2: Melody&nbsp;Mania&apos;s song editor combines features that previously required multiple tools.<br /> Plus, you can quickly <gradient>switch between editing and testing</gradient> your song.
 songEditorSection_subtitle: Create your own songs
 songEditorSection_title: Have a weird taste in music? <gradient>No&nbsp;problem!</gradient>
