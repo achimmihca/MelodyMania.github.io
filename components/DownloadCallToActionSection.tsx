@@ -9,7 +9,7 @@ const DownloadCallToActionSection = () =>
             <h1 className="text-center font-alt mb-4"><T i18nKey="downloadCallToActionSection_title" /></h1>
             {/* Buttons  */}
             <div className="d-flex flex-column align-items-center flex-md-row justify-content-center">
-                <a className="btn btn-lg mb-2" href="#" rel="noreferrer" style={{position: 'relative', width: "300px", height: '100px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Steam-ComingSoonButton.svg" layout="fill" objectFit="contain"/></a>
+                <a className="btn btn-lg mb-2" href="https://store.steampowered.com/app/2394070/Melody_Mania/" rel="noreferrer" style={{position: 'relative', width: "300px", height: '100px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Steam-WishlistButton.svg" layout="fill" objectFit="contain"/></a>
                 {/* <a className="btn btn-primary btn-lg bg-gradient mb-2" href="https://github.com/UltraStar-Deluxe/Play/releases" target="_blank" rel="noreferrer" style={{width: "300px", marginLeft: "5px", marginRight: "5px"}}><T i18nKey="button_getMainGame" /></a>
                 <a className="btn btn-primary btn-lg bg-gradient mb-2" href="https://github.com/UltraStar-Deluxe/Play/releases" target="_blank" rel="noreferrer" style={{width: "300px", marginLeft: "5px", marginRight: "5px"}}><T i18nKey="button_getCompanionApp" /></a> */}
             </div>
