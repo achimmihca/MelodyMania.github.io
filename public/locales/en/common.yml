@@ -11,6 +11,7 @@ communityCreatedSongs_regional: Sing dialect from your region
 communityCreatedSongs_subtitle: A big community already created thousands of songs in the UltraStar and MIDI format.
 communityCreatedSongs_title: Sing your favorite songs!
 communityCreatedSongs_vocaloid: Sing your favorite Vocaloid and UTAU songs
+communityCreatedSongs_searchHint: Search with Google for song title or artist
 cookieBanner_description: We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
 cookieBanner_title: We value your privacy
 crossPlatformSection_p_1: Melody&nbsp;Mania is a cross-platform application. Its initial release will be for Windows, followed by MacOS, Linux, Android, and iOS.<br /> Android TV and tvOS might be supported in the future as well.
@@ -93,7 +94,7 @@ introSection_typewriterText_prefix: Want to
 introSection_wikiName: wiki
 navigationSection_download: Download
 navigationSection_faq: FAQ
-navigationSection_features_community: Community
+navigationSection_features_community: Songs
 navigationSection_features_crossPlatform: Cross Platform
 navigationSection_features_openSource: Customizable
 navigationSection_features_overview: Overview

@@ -3,6 +3,11 @@ import { useTranslationUnescaped } from "../lib/utils";
 import { T } from "./T";
 import WaveBackground from "./WaveBackground"
 
+const songWebsiteUrls = [
+    'usdb.eu',
+    'ultrastar-es.org/en'
+]
+
 const SingIdeaEntry = (props: {title: string, image: string}) => 
 {
     let size = '150px';
@@ -15,6 +20,23 @@ const SingIdeaEntry = (props: {title: string, image: string}) =>
     </div>
 </div>
 )
+}
+
+const doSongSearch = () => {
+    if (typeof document == "undefined" || !document)
+    {
+        return;
+    }
+
+    const searchInputField = document.getElementById('example-search-input') as HTMLInputElement;
+    const searchText = searchInputField.value;
+    const escapedSearchText = encodeURI(searchText);
+    const sitesQuery = songWebsiteUrls.map(site => `site:${site}`).join(" OR ");
+    const url = `https://www.google.com/search?q=${escapedSearchText}+${sitesQuery}`
+
+    console.log(`searching for songs by text '${searchText}' via url ${url}`)
+    const newTab = open(url, '_blank');
+    newTab?.focus()
 }
 
 const CommunityCreatedSongsSection = () => {
@@ -33,6 +55,19 @@ const CommunityCreatedSongsSection = () => {
                     <div className="col-xl-8">
                         <h1 className="display-3 text-white font-alt"><T i18nKey="communityCreatedSongs_title" /></h1>
                         <h3 className="text-white font-alt"><T i18nKey="communityCreatedSongs_subtitle" /></h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="row justify-content-center mt-3">
+                <div className="col col-md-4">
+                    <div className="input-group">
+                        <input className="form-control" type="search" id="example-search-input" placeholder={ t("communityCreatedSongs_searchHint") } onKeyUp={evt => evt.keyCode === 13 ? doSongSearch() : ""}  />
+                        <span className="input-group-append">
+                            <button className="btn btn-primary" type="button" style={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }} onClick={doSongSearch}>
+                                <span className="bi bi-search" />
+                            </button>
+                        </span>
                     </div>
                 </div>
             </div>
