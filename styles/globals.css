@@ -1,6 +1,10 @@
 @import "bootstrap-new-age-v6-0-0.css";
 @import "mdx-content.css";
 
+.navbar-padding-top {
+    padding-top: 70px;
+}
+
 gradient {
     /* text-gradient */
     background: -webkit-linear-gradient(#2937f0, #9f1ae2);

@@ -1,0 +1,52 @@
+import MdxLayoutComponent from '../components/MdxLayoutComponent'
+
+# Song Format
+Melody Mania supports songs in UltraStar and MIDI format.
+
+- An UltraStar song consists of
+    -  an audio file
+    -  a plain text file (txt) with information about the song (audio file, artist, title, lyrics, notes, etc.)
+    - optionally, image and video files for album art or backgrounds
+    - TIP: If your background video has an audio track then it can be used for both, audio file and background video.
+
+- A MIDI file contains
+    - music notes to be played
+    - optionally, lyrics to be sung
+    - TIP: MIDI files with lyrics can be played directly in Melody Mania. All MIDI files can be imported in the editor to create an UltraStar song.
+
+# How to Add Songs
+### Download Song Archive
+- Melody Mania can download and unpack ZIP and TAR archives with songs directly in-game.
+    - TIP: There is an UltraStar [song package](https://github.com/UltraStar-Deluxe/songs) with Creative Commons licensed songs that can be added to your library this way
+- To download an archive
+    - navigate to the song library settings
+    - click the button to download songs
+    - add the song archive URL
+    - start the download
+    - NOTE: This will automatically add a new song folder to your local library.
+
+### Add Existing Songs
+- If you already have all files of an UltraStar song, you can
+    - add a song folder entry in the settings that points to your local song files
+        - NOTE: Android requires songs to be stored in special folders for security reasons. The required folder path is device specific and can be found in the song library settings.
+    - or store your song under an song folder path
+
+### Create Custom Songs
+- You can use the the integrated [song editor](/how-to-song-editor) of Melody Mania to create UltraStar songs of your local song library.
+
+# Supported File Formats
+- Audio files: ogg (recommended), mp3
+- Video files: webm / VP8 (recommended), mp4
+- Text files: UTF-8 encoding recommended.
+- TIP: You can find details about the UltraStar txt file format [here](https://github.com/UltraStar-Deluxe/Play/wiki/UltraStar-txt-File-Format).
+
+## Limitations / Known Issues
+
+Melody Mania at the moment does not support
+
+- the `P3` notation to specify lyrics for player 1 and player 2 at the same time. As a workaround, you can copy these parts of your song and specify P1 and P2 respectively.
+- the `#RELATIVE` tag that changes the semantics of time notation in the file.
+
+export default ({ children }) => (
+    <MdxLayoutComponent>{children}</MdxLayoutComponent>
+);

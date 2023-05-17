@@ -1,0 +1,29 @@
+import MdxLayoutComponent from '../components/MdxLayoutComponent'
+
+# Companion App
+The [Melody Mania Companion App](#) for Android enables you to
+- use your smartphone as mic
+- search and enqueue songs (when others are still singing)
+- control the game remotely
+
+## Connection
+The app connects automatically with the main game. Therefor,
+- Connect to the same WLAN as the main game
+- Check the recording options of the main game. Your Companion App should be listed.
+    - TIP: If your Companion App is not listed immediately then try to temporarily disable the firewall on the device that runs the main game. Do not forget to enable your firewall afterwards again!
+
+## Recording
+Click the corresponding button to start recording. A red button indicates that the microhpone is recording now.
+
+TIP: You do not need to start recording manually during the game because recording is synchronized automatically with song playback.
+
+NOTE: The Companion App does not exchange raw audio data. Instead, only pitch information of your singing is exchanged with the main game.
+
+## Permissions
+Extra permissions are required to enqueue songs and control the main game remotely. To grant these permissions,
+- view the connected apps in the main game settings
+- tick the corresponding checkboxes of your app to grant permissions
+
+export default ({ children }) => (
+    <MdxLayoutComponent>{children}</MdxLayoutComponent>
+);
