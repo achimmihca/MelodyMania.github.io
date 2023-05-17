@@ -4,8 +4,7 @@ const SocialMediaLinks = () => (
     <a href="https://discord.gg/PAUJFKCGbb" className="mx-2">
         <i className="bi bi-discord" aria-hidden="true"></i>
     </a>
-    {/* TODO: Add youtube link */}
-    <a href="#" className="mx-2">
+    <a href="https://www.youtube.com/@melodymaniaofficial" className="mx-2">
         <i className="bi bi-youtube" aria-hidden="true"></i>
     </a>
     {/* <a href="https://twitter.com/UltraStar_Play" className="mx-2">
