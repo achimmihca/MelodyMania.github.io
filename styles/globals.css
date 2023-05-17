@@ -1,4 +1,16 @@
 @import "bootstrap-new-age-v6-0-0.css";
+@import "mdx-content.css";
+
+gradient {
+    /* text-gradient */
+    background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* bold */
+    font-weight: bold;
+}
 
 .cookie-notice-container {
     position: fixed;
