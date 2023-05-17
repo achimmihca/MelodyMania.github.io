@@ -14,8 +14,8 @@ const SongEditorSection = () =>
     useEffect(() => 
     {
         setInnerHtml('songEditorSection_furtherDocumentation', t("songEditorSection_furtherDocumentation", {
-            "videoLink": `<a href='https://www.youtube.com/watch?v=osKizOyXYFQ'>${videoName}</a>`,
-            "documentationLink": `<a href='https://github.com/UltraStar-Deluxe/Play/wiki/Song-Editor'>${documentationName}</a>`,
+            "videoLink": `<a href='/how-to-song-editor'>${videoName}</a>`,
+            "documentationLink": `<a href='/how-to-song-editor'>${documentationName}</a>`,
         }))
     })
 

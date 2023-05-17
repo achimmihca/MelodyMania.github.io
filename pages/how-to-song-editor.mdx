@@ -1,8 +1,136 @@
 import MdxLayoutComponent from '../components/MdxLayoutComponent'
+import TutorialVideo from '../components/TutorialVideo'
 
 # Song Editor
+Melody Mania includes an editor that can be used to create a sing-along version of any song.
+
+The following shows how to use the editor.
+
+
+## View Shortcuts and Controls
+- The help dialog shows all available shortcuts and controls
+<TutorialVideo src="/videos/song-editor/view-controls-help.webm" />
+
+## Split Audio to Isolate Vocals
+- Click the button in the left side bar to split vocals audio and instrumental audio
+- Afterwards, speech recognition and pitch detection can be performed on the vocals audio
+<TutorialVideo src="/videos/song-editor/split-audio.webm" />
+
+## Change Playback Audio
+- You can select which audio should be played: the original music, vocals, insturmental, or your mircophone recording
+<TutorialVideo src="/videos/song-editor/change-playback-audio.webm" />
+
+## Dictate Lyrics
+- Configure a microphone and click the recording button
+- Speak clearly in the microphone to dictate lyrics
+- TIP: You can change the language for speech recognition by changing path to the model.
+- TIP: More speech recognition models are available for download [here](https://alphacephei.com/vosk/models)
+- TIP: Your recorded audio is shown in red in the overview bar at the bottom
+- NOTE: The speech recognition models have not been trained on singing data. Thus, you may achieve better results by dictating lyrics and speaking clearly, without singing.
+<TutorialVideo src="/videos/song-editor/dictate-lyrics.webm" />
+
+## Speech Recognition in Selection
+- As alternative to dictating lyrics, you can run the speech recognition on the vocals audio
+- Select a range or hit `Ctrl+A` to select all
+- Click the button in the settings to do speech recognition on the last selected range
+- NOTE: The speech recognition models have not been trained on singing data. Thus, you may achieve better results by dictating lyrics and speaking clearly, without singing.
+<TutorialVideo src="/videos/song-editor/speech-recognition-in-selection.webm" />
+
+
+## Import LRC Lyrics
+- You can import lyrics in [LRC format](https://en.wikipedia.org/wiki/LRC_(file_format))
+- TIP: Lyrics in LRC format can be found for example on [lyricsify.com](https://lyricsify.com/)
+<TutorialVideo src="/videos/song-editor/import-lrc-format.webm" />
+
+
+## Edit Lyrics
+- Double click a note or phrase to open its lyrics dialog
+- Or use the right click context menu to open the lyrics dialog
+- Switch to edit mode in the lyrics area to edit the lyrics of the whole song
+    - NOTE: Only notes that have been assigned to a player (P1 or P2) are shown in the lyrics area
+- TIP: You can split a note with space and semicolon when editing a note's lyrics
+
+*Special characters*
+- A `semicolon` can be used to separate syllables.
+- A `space` is shown as circle and can be used to separate words.
+- A `line break` is shown as arrow-left and can be used to separate phrases.
+<TutorialVideo src="/videos/song-editor/edit-lyrics.webm" />
+
+
+## Pitch Detection
+- Move notes to detected pitch using the right click context menu on a note or phrase.
+- Show detected pitch values using the right click context menu on a phrase or using the corresponding button in the settings.
+- TIP: You can change the audio that is used for pitch detection in the settings (default: vocals audio).
+<TutorialVideo src="/videos/song-editor/pitch-detection.webm" />
+
+
+## Select Cover, Background, Video
+- Click the preview of the cover, background, or video to change it
+<TutorialVideo src="/videos/song-editor/select-cover-background-video.webm" />
+
+
+## Draw to Add Notes
+- Select an empty range to deselect all notes
+- Hold `Shift` while dragging to draw new notes
+- TIP: The target layer for new notes can be changed in the settings
+<TutorialVideo src="/videos/song-editor/draw-to-add-notes.webm" />
+
+
+## Button Tapping to Add Notes
+- Start playback then press the corresponding button to add notes
+- TIP: Reduce the playback speed for better accuracy
+- TIP: The used button can be changed in the settings
+<TutorialVideo src="/videos/song-editor/button-tapping-to-add-notes.webm" />
+
+
+## Assign Notes to Player
+- Assign selected notes to a player using the right click context menu
+- NOTE: Only notes that have been assigned to a player are saved to the file!
+<TutorialVideo src="/videos/song-editor/assign-notes-to-player.webm" />
+
+
+## Adjust Following Notes
+- Enable this option to move following notes accordingly
+<TutorialVideo src="/videos/song-editor/adjust-following-notes.webm" />
+
+
+## Note Layers
+- You can hide / show the notes of a layer in the layer menu
+- You can lock / unlock the notes of a layer in the layer menu. The notes of a locked layer can not be edited.
+- You can select all the notes of a layer in the layer menu
+<TutorialVideo src="/videos/song-editor/note-layers.webm" />
+
+
+## Play MIDI Sounds
+- Hold `Ctrl` while you click on a note to preview its pitch
+- Use the virtual piano to hear a MIDI sound of that pitch
+- MIDI sounds during playback can be enabled / disabled in the settings
+- TIP: MIDI sound during playback can be enabled / disabled per layer in the layer menu
+<TutorialVideo src="/videos/song-editor/midi-sounds.webm" />
+
+
+## Import MIDI / KAR File
+- You can import lyrics and notes from a MIDI file (aka. KAR file if the MIDI file contains lyrics)
+<TutorialVideo src="/videos/song-editor/import-midi-file.webm" />
+
+
+## Fix Warnings and Errors
+- Click on a warning / error to view its message
+- Click on a warning / error in the menu to jump to its position
+<TutorialVideo src="/videos/song-editor/warning-and-error-markers.webm" />
+
+
+## Change GAP (aka. Time to First Lyrics)
+- Change the GAP (i.e. the time to first lyrics) using the right click context menu
+<TutorialVideo src="/videos/song-editor/set-gap.webm" />
+
+
+## Change Video Offset
+- Change the video offset by dragging left / right on the video preview
+- Reset the video offset using the right click context menu on the video preview
+<TutorialVideo src="/videos/song-editor/video-offset.webm" />
 
 
 export default ({ children }) => (
-    <MdxLayoutComponent>{children}</MdxLayoutComponent>
+    <MdxLayoutComponent additionalClasses="how-to-song-editor">{children}</MdxLayoutComponent>
 );

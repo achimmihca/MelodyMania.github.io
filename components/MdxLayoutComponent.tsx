@@ -1,17 +1,17 @@
 import BackToHomeNavigationSection from "./BackToHomeNavigationSection";
 
 // @ts-ignore
-const MdxLayoutComponent: any = ({ children }) =>
+const MdxLayoutComponent: any = (props: {additionalClasses?: string, children: React.ReactNode}) =>
 {
     return (
         <>
             <BackToHomeNavigationSection title={ `Melody Mania` }/>
-            <div className="mdx-content navbar-padding-top">
-                <div className="section px-5">
+            <div className={ `mdx-content ${props.additionalClasses} `}>
+                <div className="section">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-6">
-                                {children}
+                                {props.children}
                             </div>
                         </div>
                     </div>
