@@ -59,7 +59,7 @@ const CommunityCreatedSongsSection = () => {
                 </div>
             </div>
             
-            <div className="row justify-content-center mt-3">
+            {/* <div className="row justify-content-center mt-3">
                 <div className="col col-md-4">
                     <div className="input-group">
                         <input className="form-control" type="search" id="example-search-input" placeholder={ t("communityCreatedSongs_searchHint") } onKeyUp={evt => evt.keyCode === 13 ? doSongSearch() : ""}  />
@@ -70,7 +70,7 @@ const CommunityCreatedSongsSection = () => {
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="container px-md-5">
                 <hr className="bg-light"/>
