@@ -33,7 +33,7 @@ const Home: NextPage = () =>
             <CommunityCreatedSongsSection />
             <EasyToUseSection />
             <SongEditorSection />
-            <CrossPlatformSection />
+            {/* <CrossPlatformSection /> */}
             <OpenSourceSection />
             {/* <PlannedFeaturesSection /> */}
             {/* <DownloadCallToActionSection /> */}
