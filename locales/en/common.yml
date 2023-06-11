@@ -25,7 +25,7 @@ easyToUseSection_list_1: You don&apos;t need to be a talented singer.
 easyToUseSection_list_2: You don&apos;t need to buy a microphone.
 easyToUseSection_list_3: You don&apos;t need to buy a new console.
 easyToUseSection_p_afterList: Anyone can have a fun time singing! Just start Melody&nbsp;Mania and <gradient>let&nbsp;the&nbsp;game guide&nbsp;your&nbsp;pitch</gradient> to the next highscore.
-easyToUseSection_p_beforeList: There is a <gradient>free song package</gradient> that can be downloaded in-game within seconds.
+easyToUseSection_p_beforeList: Start playing immediately with the <gradient>included demo songs</gradient>. Or use the <gradient>free song package</gradient> that can be downloaded directly in the game.
 easyToUseSection_title: You Can <gradient>Have Fun in Minutes</gradient>
 featuresSection_featureCard_audience_detail: Each song can have a background video or image. A delight for both, the audience and the singers.
 featuresSection_featureCard_audience: Entertained Audience
@@ -59,14 +59,17 @@ featuresSection_featureCard_teamAndTournament_detail: Play multiple rounds, roun
 featuresSection_featureCard_teamAndTournament: Team & Tournament
 featuresSection_featureCard_themes_detail: Change the look and feel of the game to suit your style. Create custom themes.
 featuresSection_featureCard_themes: Themes
-featuresSection_featureCard_vocalsSeparation_detail: Split ANY audio file into vocals and instrumental track. Useful to mute vocals for classic karaoke or when editing songs.
-featuresSection_featureCard_vocalsSeparation: Vocals Separation
+featuresSection_featureCard_vocalsSeparation_detail: Split your mp3 or ogg files into vocals and instrumental track. Useful to mute vocals for classic karaoke or when editing songs.
+featuresSection_featureCard_vocalsSeparation: Vocals Isolation
 featuresSection_featureCard_webcam_detail: Singing is even more fun when you can see yourself! Use your camera as background or take a snapshot for your profile image
 featuresSection_featureCard_webcam: Webcam
+featuresSection_featureCard_embeddedBrowser_detail: Use videos from YouTube or other websites. This is possible thanks to the browser that has been embedded in the game.
+featuresSection_featureCard_embeddedBrowser: Videos on the Internet
 featuresSection_featureList_companionApp: Companion App as mic
 featuresSection_featureList_customSongs: Custom songs and song editor
 featuresSection_featureList_deviceSupport: Controller and webcam support
 featuresSection_featureList_duetSongs: Duet songs
+featuresSection_featureList_embeddedBrowser: Integration of websites (e.g. YouTube)
 featuresSection_featureList_pitchDetection: Pitch detection to guide your voice
 featuresSection_featureList_playlists: Favorites and playlists
 featuresSection_featureList_scoreMode: Cooperative score mode
@@ -78,7 +81,8 @@ featuresSection_imagineList_1: Throw a singing party with family and friends
 featuresSection_imagineList_2: Break the highscore or sing duets together
 featuresSection_imagineList_3: Create the songs you want, no matter your taste in music
 featuresSection_imagineList_4: Use your smartphone as mic, no need to buy new equipment
-featuresSection_imagineList_5: Mute the vocals of any song for a classic karaoke experience
+featuresSection_imagineList_5: Mute the vocals of your local songs for a classic karaoke experience
+featuresSection_imagineList_embeddedBrowser: Use video platforms such as YouTube directly in game
 featuresSection_imagineList_title: Imagine what it would be like to...
 introSection_discordName: Discord
 introSection_documentationAndHelpLinks: Join the growing community on {{discordLink}}.
@@ -130,7 +134,7 @@ plannedFeaturesSection_plannedFeature_5: Online multiplayer
 plannedFeaturesSection_plannedFeature_6: New themes
 plannedFeaturesSection_title: More to Come
 songEditorSection_afterFeatureList: With all these features, creating a sing-along version for a game <gradient>has never been easier.</gradient>
-songEditorSection_featureList_1: Add notes via button tapping or dictating lyrics
+songEditorSection_featureList_1: Add notes via button tapping or by dictating lyrics
 songEditorSection_featureList_10: Isolate vocals of songs for pitch detection and speech recognition
 songEditorSection_featureList_11: "&hellip;and much more!"
 songEditorSection_featureList_2: Edit notes via drag & drop
@@ -144,7 +148,7 @@ songEditorSection_featureList_9: Quality analysis and hints
 songEditorSection_furtherDocumentation_documentation: documentation
 songEditorSection_furtherDocumentation_video: video
 songEditorSection_furtherDocumentation: Check out the {{videoLink}} or {{documentationLink}} for details.
-songEditorSection_p_1: Create and edit songs as you please. The <gradient>INTEGRATED EDITOR</gradient> allows to easily create a sing-along version of any song.
+songEditorSection_p_1: Create and edit songs as you please. The <gradient>AI POWERED EDITOR</gradient> allows to easily create a sing-along version of any song.
 songEditorSection_p_2: Melody&nbsp;Mania&apos;s song editor combines features that previously required multiple tools.<br /> Plus, you can quickly <gradient>switch between editing and testing</gradient> your song.
 songEditorSection_subtitle: Create your own songs
 songEditorSection_title: Have a weird taste in music? <gradient>No&nbsp;problem!</gradient>
