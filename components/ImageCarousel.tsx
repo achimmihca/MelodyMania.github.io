@@ -1,10 +1,13 @@
 import Image from "next/legacy/image";
 
 const slides = [
-    "/img/carousel/MelodyMania-Steam-Main-Capsule.jpg",
-    "/img/carousel/OnTheRun-TwoTeams-PassTheMic-StreamingNotes.jpg",
+    "/img/carousel/MelodyMania-Steam-Main-Capsule-NoNotes.jpg",
     "/img/carousel/SonicRainboom-TwoPlayers-StaticNotes-SameLyrics.jpg",
+    "/img/carousel/OnTheRun-TwoTeams-PassTheMic-StreamingNotes.jpg",
     "/img/carousel/TeamResults-FinalRound.jpg",
+    "/img/carousel/smartphone-2354577-capp-recording.png",
+    "/img/carousel/smartphone-2354577-capp-controls.png",
+    "/img/carousel/SongEditor.jpg",
 ]
 
 const SlideIndicator = (props: {index: number}) => 
