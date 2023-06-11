@@ -25,7 +25,7 @@ easyToUseSection_list_1: Man braucht kein talentierter Sänger zu sein
 easyToUseSection_list_2: Man braucht keine Mikrofone zu kaufen
 easyToUseSection_list_3: Man braucht keine neue Konsole zu kaufen
 easyToUseSection_p_afterList: Jeder kann eine spaßige Zeit beim Singen haben! Einfach Melody&nbsp;Mania starten und <gradient>von der Tonhöhenerkennung leiten lassen</gradient>.
-easyToUseSection_p_beforeList: Es gibt ein <gradient>kostenloses Songpaket</gradient>, das innerhalb von Sekunden im Spiel heruntergeladen werden kann.
+easyToUseSection_p_beforeList: Lege direkt los mit den <gradient>enthaltenen Songs</gradient>. Oder nutze das <gradient>kostenlose Songpaket</gradient>, welches in wenigen Minuten im Spiel heruntergeladen werden kann.
 easyToUseSection_title: Du kannst <gradient>sofort Spaß haben</gradient>
 featuresSection_featureCard_audience_detail: Ein Song kann zusätzlich ein Video abspielen. Damit wird es zum Vergnügen für Spieler und Zuschauer gleichermaßen.
 featuresSection_featureCard_audience: Unterhaltene Zuschauer
@@ -63,10 +63,13 @@ featuresSection_featureCard_vocalsSeparation_detail: Teile Audiodateien auf in e
 featuresSection_featureCard_vocalsSeparation: Isolation der Gesangsstimme
 featuresSection_featureCard_webcam_detail: Singen macht noch mehr Freude, wenn man sich sehen kann! Benutze deine Kamera als Hintergrundvideo oder um dein Profilbild zu erstellen.
 featuresSection_featureCard_webcam: Webcam
+featuresSection_featureCard_embeddedBrowser_detail: Nutze Videos von YouTube oder anderen Webseiten mittels des im Spiel eingebetteten Browsers.
+featuresSection_featureCard_embeddedBrowser: Internet-Videos
 featuresSection_featureList_companionApp: Companion App als Mikrofon
 featuresSection_featureList_customSongs: Eigene Songs und Song-Editor
 featuresSection_featureList_deviceSupport: Controller- und Webcamunterstützung
 featuresSection_featureList_duetSongs: Duette
+featuresSection_featureList_embeddedBrowser: Integration von Webseiten (z.B. YouTube)
 featuresSection_featureList_pitchDetection: Tonhöhenerkennung, die dich leitet
 featuresSection_featureList_playlists: Favoriten und Playlisten
 featuresSection_featureList_scoreMode: Kooperativer Punktemodus
@@ -79,6 +82,7 @@ featuresSection_imagineList_2: Den Highscore zu knacken oder ein Duett zusammen 
 featuresSection_imagineList_3: Die Songs zu erstellen, die DU möchtest
 featuresSection_imagineList_4: Dein Smartphone als Mikrofon zu benutzen
 featuresSection_imagineList_5: Gesang stumm zu schalten für ein klassisches Karaoke-Erlebnis
+featuresSection_imagineList_embeddedBrowser: Video-Plattformen wie YouTube direkt im Spiel zu nutzen
 featuresSection_imagineList_title: Stell dir vor, wie es wäre...
 introSection_discordName: Discord
 introSection_documentationAndHelpLinks: Werde Teil der wachsenden Community auf {{discordLink}}.
@@ -144,8 +148,8 @@ songEditorSection_featureList_9: Qualitätshinweise und Tipps
 songEditorSection_furtherDocumentation_documentation: Dokumentation
 songEditorSection_furtherDocumentation_video: Video
 songEditorSection_furtherDocumentation: Schau dir das {{videoLink}} an oder in die {{documentationLink}} für weitere Infos.
-songEditorSection_p_1: Mit dem <gradient>INTEGRIERTEN EDITOR</gradient> kann man einfach für jeden beliebigen Song eine Version zum Mitsingen erstellen.
-songEditorSection_p_2: "Was bisher verschiedene Werkzeuge benötigt hat, geht nun mit Melody&nbsp;Mania alleine.<br /> Außerdem: Du kannst schnell <gradient>zwischen editieren und testen wechseln</gradient>."
+songEditorSection_p_1: Mit den <gradient>KI-WERKZEUGEN IM EDITOR</gradient> kann man einfach für jeden beliebigen Song eine Version zum Mitsingen erstellen.
+songEditorSection_p_2: "Was bisher verschiedene Werkzeuge benötigt hat, geht nun mit Melody&nbsp;Mania alleine.<br /> Außerdem: Du kannst schnell <gradient>zwischen Editieren und Testen wechseln</gradient>."
 songEditorSection_subtitle: Erstelle deine eigenen Songs
 songEditorSection_title: Schräger Musikgeschmack?<br /><gradient>Kein&nbsp;Problem!</gradient>
 youTubeVideo_mustAcceptCookieHint: Alle Cookies akzeptieren, um Video von YouTube zu sehen.

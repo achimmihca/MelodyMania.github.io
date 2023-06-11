@@ -16,9 +16,10 @@ const FeatureItem = (props: {icon: string, title: string, children?: React.React
 const featureList = [
     "featuresSection_featureList_pitchDetection",
     "featuresSection_featureList_customSongs",
-    "featuresSection_featureList_scoreMode",
+    "featuresSection_featureList_embeddedBrowser",
     "featuresSection_featureList_companionApp",
-    "featuresSection_featureList_duetSongs",
+    "featuresSection_featureList_scoreMode",
+    // "featuresSection_featureList_duetSongs",
 
     "featuresSection_featureList_teamAndTournament",
     "featuresSection_featureList_songQueueAndMedleys",
@@ -37,6 +38,7 @@ const featureCards = [
     { icon: "bi-stack", title: "featuresSection_featureCard_songQueueAndMedleys" },
 
     // Technical features
+    { icon: "bi-cloud", title: "featuresSection_featureCard_embeddedBrowser" },
     { icon: "bi-phone", title: "featuresSection_featureCard_companionApp" },
     { icon: "bi-mic", title: "featuresSection_featureCard_mics" },
     { icon: "bi-collection-play", title: "featuresSection_featureCard_openSongFormat" },
@@ -107,6 +109,7 @@ const FeaturesSection = () =>
                             <li><T i18nKey="featuresSection_imagineList_3" /></li>
                             <li><T i18nKey="featuresSection_imagineList_4" /></li>
                             <li><T i18nKey="featuresSection_imagineList_5" /></li>
+                            <li><T i18nKey="featuresSection_imagineList_embeddedBrowser" /></li>
                         </ul>
                     </div>
                 </div>
