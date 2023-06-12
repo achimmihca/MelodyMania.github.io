@@ -38,7 +38,7 @@ const featureCards = [
     { icon: "bi-stack", title: "featuresSection_featureCard_songQueueAndMedleys" },
 
     // Technical features
-    { icon: "bi-cloud", title: "featuresSection_featureCard_embeddedBrowser" },
+    { icon: "bi-youtube", title: "featuresSection_featureCard_embeddedBrowser" },
     { icon: "bi-phone", title: "featuresSection_featureCard_companionApp" },
     { icon: "bi-mic", title: "featuresSection_featureCard_mics" },
     { icon: "bi-collection-play", title: "featuresSection_featureCard_openSongFormat" },
