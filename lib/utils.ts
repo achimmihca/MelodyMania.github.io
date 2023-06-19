@@ -74,7 +74,7 @@ const useTranslationUnescaped = (ns: string = "common"): { t: GetTranslationFunc
     return { t: getTranslationFunction };
 }
 
-const getUnescapedTranslations = (key: string, ns: string = "common"): string[] =>
+const useUnescapedTranslations = (key: string, ns: string = "common"): string[] =>
 {
     const { t } = useTranslationUnescaped(ns);
     
@@ -120,4 +120,4 @@ interface GetTranslationFunction
     (i18nKey: string, options?: any): string
 }
 
-export { tryParseInt, getVerticalScrollPercentage, doWithElement, setInnerHtml, useTranslationUnescaped, getUnescapedTranslations }
+export { tryParseInt, getVerticalScrollPercentage, doWithElement, setInnerHtml, useTranslationUnescaped, useTranslationUnescaped as useUnescapedTranslation, useUnescapedTranslations }
