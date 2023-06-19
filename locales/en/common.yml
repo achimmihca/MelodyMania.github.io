@@ -126,12 +126,12 @@ openSourceSection_whyOpenSource_title: Why an open song format?
 page_legalNotice: Legal Notice
 page_privacyPolicy: Privacy Policy
 plannedFeaturesSection_detail: Melody&nbsp;Mania is already fun to play.<br /> Nonetheless, there are more features planned and more work to do. Join our social media channels to follow the journey of Melody&nbsp;Mania becoming the next party hit everyone loves.
-plannedFeaturesSection_plannedFeature_1: Party modes
-plannedFeaturesSection_plannedFeature_2: Medleys
-plannedFeaturesSection_plannedFeature_3: Song queue
-plannedFeaturesSection_plannedFeature_4: Smartphone Control
-plannedFeaturesSection_plannedFeature_5: Online multiplayer
-plannedFeaturesSection_plannedFeature_6: New themes
+plannedFeaturesSection_plannedFeature_1: Online multiplayer & high scores
+plannedFeaturesSection_plannedFeature_2: Modding support
+plannedFeaturesSection_plannedFeature_3: Steam Workshop
+plannedFeaturesSection_plannedFeature_4: Localization
+plannedFeaturesSection_plannedFeature_5: Windows, macOS, Linux
+plannedFeaturesSection_plannedFeature_6: Android, iOS
 plannedFeaturesSection_title: More to Come
 songEditorSection_afterFeatureList: With all these features, creating a sing-along version for a game <gradient>has never been easier.</gradient>
 songEditorSection_featureList_1: Add notes via button tapping or by dictating lyrics
