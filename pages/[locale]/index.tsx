@@ -36,8 +36,8 @@ const Home: NextPage = () =>
             {/* <CrossPlatformSection /> */}
             <OpenSourceSection />
             <PlannedFeaturesSection />
-            {/* <DownloadCallToActionSection /> */}
             <NewsletterSection />
+            {/* <DownloadCallToActionSection /> */}
             <FooterSection />
             <CookieBanner />
         </>

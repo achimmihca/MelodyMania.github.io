@@ -47,14 +47,9 @@ const IntroSection = () =>
 
                         {/* Buttons */}
                         <div className="d-flex flex-column flex-lg-row align-items-center">
-                            <a className="btn btn-lg mb-2" href="https://store.steampowered.com/app/2394070/Melody_Mania/" rel="noreferrer" style={{position: 'relative', width: "300px", height: '100px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Steam-WishlistButton.svg" layout="fill" objectFit="contain"/></a>
-                            {/* <a className="btn btn-primary btn-lg bg-gradient mb-2" href="https://github.com/UltraStar-Deluxe/Play/releases" target="_blank" rel="noreferrer" style={{width: "300px", marginLeft: "5px", marginRight: "5px"}}><T i18nKey="button_getMainGame" /></a> */}
-                            {/* <a className="btn btn-primary btn-lg bg-gradient mb-2" href="https://github.com/UltraStar-Deluxe/Play/releases" target="_blank" rel="noreferrer" style={{width: "300px", marginLeft: "5px", marginRight: "5px"}}><T i18nKey="button_getCompanionApp" /></a> */}
+                            <a className="btn btn-lg mb-2" href="https://store.steampowered.com/app/2394070/Melody_Mania/" rel="noreferrer" style={{position: 'relative', width: "300px", height: '80px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Steam-WishlistButton.svg" layout="fill" objectFit="contain"/></a>
+                            <a className="btn btn-lg mb-2" href="https://play.google.com/store/apps/details?id=com.melodymania.MelodyManiaCompanion" target="_blank" rel="noreferrer" style={{position: 'relative', width: "300px", height: '80px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Google_Play_Store_badge_companion_app.svg" layout="fill" objectFit="contain"/></a>
                         </div>
-                        {/* <div className="d-flex flex-column align-items-center flex-md-row justify-content-center">
-                            <a className="btn btn-lg mb-2" href="https://play.google.com/store/apps/details?id=com.ultrastar.UltraStarPlay" target="_blank" rel="noreferrer" style={{position: 'relative', width: "300px", height: '50px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Google_Play_Store_badge_main_game.svg" layout="fill" objectFit="contain"/></a>
-                            <a className="btn btn-lg mb-2" href="https://play.google.com/store/apps/details?id=com.ultrastar.UltraStarPlayCompanion" target="_blank" rel="noreferrer" style={{position: 'relative', width: "300px", height: '50px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Google_Play_Store_badge_companion_app.svg" layout="fill" objectFit="contain"/></a>
-                        </div> */}
                     </div>
                 </div>
 
