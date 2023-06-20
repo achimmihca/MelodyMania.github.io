@@ -1,5 +1,6 @@
 import { useTranslationUnescaped } from "../lib/utils"
 import { T } from "./T"
+import Video from "./Video"
 import WaveBackground from "./WaveBackground"
 import YouTubeVideo from "./YouTubeVideo"
 
@@ -88,12 +89,12 @@ const FeaturesSection = () =>
                     </div>
                 </div>
     
-                {/* YouTube video (game teaser)  */}
-                {/* <div className="row my-5 justify-content-center">
+                {/* Game trailer  */}
+                <div className="row my-5 justify-content-center">
                     <div className="col-md-6">
-                        <YouTubeVideo src="https://www.youtube.com/embed/4hXKOLafpDg" containerId="game-video" />
+                        <Video src="/videos/trailer.webm" />
                     </div>
-                </div> */}
+                </div>
     
                 {/* Imagine fun time */}
                 <div className="row justify-content-center">
