@@ -1,0 +1,128 @@
+{
+    "products": {
+        "mm": "Melody Mania",
+        "usplay": "UltraStar Play"
+    },
+    "features": [
+        {
+            "name": "UltraStar song format",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Duet songs",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Score modes",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Webcam",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Partial controller support",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Custom themes",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Custom player profile images",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Companion app - microphone",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Microphones with multiple channels",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Select microphone by singing",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Embedded browser (YouTube etc.)",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Team & Tournament",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Song Queue",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Medleys",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Vocals isolation (AI)",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Speech recognition (AI)",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Pitch detection (AI)",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Visual Goodies from Unity Asset Store",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "MIDI support",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Song editor - import MIDI files",
+            "mm": "full",
+            "usplay": "partial"
+        },
+        {
+            "name": "Song editor - import LRC lyrics",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Companion app - remote control",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Companion app - song queue",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "REST API to control the game",
+            "mm": true,
+            "usplay": false
+        }
+    ]
+}
