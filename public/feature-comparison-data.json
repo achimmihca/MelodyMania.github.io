@@ -75,27 +75,27 @@
             "usplay": false
         },
         {
-            "name": "Vocals isolation (AI)",
-            "mm": true,
-            "usplay": false
-        },
-        {
-            "name": "Speech recognition (AI)",
-            "mm": true,
-            "usplay": false
-        },
-        {
-            "name": "Pitch detection (AI)",
-            "mm": true,
-            "usplay": false
-        },
-        {
             "name": "Visual Goodies from Unity Asset Store",
             "mm": true,
             "usplay": false
         },
         {
             "name": "MIDI support",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Vocals isolation (AI)",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Song editor - speech recognition (AI)",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Song editor - pitch detection (AI)",
             "mm": true,
             "usplay": false
         },
@@ -110,12 +110,12 @@
             "usplay": false
         },
         {
-            "name": "Companion app - remote control",
+            "name": "Companion app - song queue",
             "mm": true,
             "usplay": false
         },
         {
-            "name": "Companion app - song queue",
+            "name": "Companion app - remote control",
             "mm": true,
             "usplay": false
         },
