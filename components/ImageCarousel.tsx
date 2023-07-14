@@ -1,7 +1,7 @@
 import Image from "next/legacy/image";
 
 const slides = [
-    "/img/carousel/MelodyMania-Steam-Main-Capsule-NoNotes.jpg",
+    "/img/carousel/MelodyMania-MainCapsule-NoNotes.jpg",
     "/img/carousel/SonicRainboom-TwoPlayers-StaticNotes-SameLyrics.jpg",
     "/img/carousel/OnTheRun-TwoTeams-PassTheMic-StreamingNotes.jpg",
     "/img/carousel/TeamResults-FinalRound.jpg",
