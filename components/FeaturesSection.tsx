@@ -42,6 +42,7 @@ const featureCards = [
     { icon: "bi-youtube", title: "featuresSection_featureCard_embeddedBrowser" },
     { icon: "bi-phone", title: "featuresSection_featureCard_companionApp" },
     { icon: "bi-mic", title: "featuresSection_featureCard_mics" },
+    { icon: "bi-volume-up", title: "featuresSection_featureCard_micPlayback" },
     { icon: "bi-collection-play", title: "featuresSection_featureCard_openSongFormat" },
     { icon: "bi-camera", title: "featuresSection_featureCard_webcam" },
     { icon: "bi-circle-square", title: "featuresSection_featureCard_vocalsSeparation" },

@@ -55,6 +55,16 @@
             "usplay": false
         },
         {
+            "name": "Play back mic input",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Many audio and video file formats",
+            "mm": true,
+            "usplay": false
+        },
+        {
             "name": "Embedded browser (YouTube etc.)",
             "mm": true,
             "usplay": false
