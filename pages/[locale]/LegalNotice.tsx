@@ -28,7 +28,7 @@ const LegalNotice: NextPage = () => {
 
                     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
                     <p>Andreas Stange<br />
-                    Rambergstra&szlig;e 10<br />
+                    Celler Str. 40<br />
                     30161 Hannover</p>
 
                     <h2>Kontakt</h2>
