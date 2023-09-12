@@ -1,0 +1,66 @@
+import MdxLayoutComponent from '../components/MdxLayoutComponent'
+
+# Game Mods
+- Melody Mania can be extended with custom code that can be used to modify (mod) the game.
+- A folder with such custom code is called a mod.
+
+### How to Install Mods
+- Mods are searched in a specific folder.
+- This mods holding folder can be found by executing the command `mod.path` in the game's console (open via `F7`).
+- To install a mod, copy its folder to this location. An app restart may be required afterwards.
+
+# How to Develop Mods
+- Mod development for Melody Mania means C# programming.
+- This can be done with [Visual Studio Code](https://code.visualstudio.com/)
+and the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), which provides IDE features like
+code completion, error markers, parameter hints, go to definition, etc.
+
+### Mod Interfaces
+- A mod needs to implement certain C# interfaces that are instantiated by the game.
+- Available interfaces for mods can be found by executing `mod.interfaces` in the game's console.
+
+### Create a New Mod
+- Press `F7` to open the game's console
+- Execute the command `mod.create MyModName` in the console.
+    - This will create a new example mod with the given name.
+- Open the created mod folder in Visual Studio Code. Install C# Dev Kit if not done already.
+- Write C# code as needed.
+
+### Troubleshooting Hints
+- Disable other mods while working on a new mod.
+- Make sure C# Dev Kit and the C# project are loaded correctly.
+    - Try to write something that is known to fail, e.g., `ThisIsWrong()` and check if an error marker appears as expected.
+- Make sure that there are no error markers in the IDE
+    - Only a mod without errors will load properly in the game
+- Make sure `modinfo.json` specifies all required namespaces in the `requires` field.
+    - By default, not all of the app domain (i.e. loaded libraries) are exposed to mods.
+- Use `UnityEngine.Debug.Log` to write information to the game's log and console.
+- Try to restart the game and see if errors are still present.
+
+### The .csproj file
+- The `.csproj` file holds information about the C# project structure of the mod.
+- This file tells the IDE which C# libraries (DLL files) are available.
+    - The file should point to the DLL files that are shipped with the game,
+      plus the DLL files in the mod folder itself.
+- This file is used only by the IDE, not by the game.
+
+### The modinfo.json file
+- Information about the mod such as its name, description, and version should be specified in the file `modinfo.json`.
+- The information from `modinfo.json` can be accessed by the user in the game without activating the mod.
+
+### Mod Loading
+- Mods are loaded in alphabetical order.
+- Enabled mod are loaded after
+    - the game starts
+    - a mod becomes enabled
+- Instances of classes from mods are created only after all enabled mods have been loaded
+
+### Script Loading Order
+- First, DLL files in the mod folder are loaded in alphabetical order.
+- Second, C# files in the mod folder are loaded in alphabetical order.
+- Thus, you can change the load order of your scripts be naming them accordingly, e.g., with a letter prefix.
+    - Example: `a-MyFirstFile.cs` would be loaded before `b-MyBestFile.cs`
+
+export default ({ children }) => (
+    <MdxLayoutComponent>{children}</MdxLayoutComponent>
+);
