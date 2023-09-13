@@ -1,19 +1,19 @@
 import MdxLayoutComponent from '../components/MdxLayoutComponent'
 
-# Game Mods
+# What is a Mod
 - Melody Mania can be extended with custom code that can be used to modify (mod) the game.
-- A folder with such custom code is called a mod.
+- A folder with such custom code is called a *mod folder* or short *mod*.
 
 ### How to Install Mods
-- Mods are searched in a specific folder.
-- This mods holding folder can be found by executing the command `mod.path` in the game's console (open via `F7`).
-- To install a mod, copy its folder to this location. An app restart may be required afterwards.
+- Mod folders are searched in a specific folder called the *mods root folder*.
+- The mods root folder can be found by executing the command `mod.path` in the game's console (open via `F7`).
+- To install a mod folder, copy it to the mods root folder. An app restart may be required afterwards.
 
 # How to Develop Mods
 - Mod development for Melody Mania means C# programming.
 - This can be done with [Visual Studio Code](https://code.visualstudio.com/)
-and the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), which provides IDE features like
-code completion, error markers, parameter hints, go to definition, etc.
+and the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+that provides IDE features such as code completion, error markers, parameter hints, go to definition, etc.
 
 ### Mod Interfaces
 - A mod needs to implement certain C# interfaces that are instantiated by the game.
@@ -29,13 +29,13 @@ code completion, error markers, parameter hints, go to definition, etc.
 ### Troubleshooting Hints
 - Disable other mods while working on a new mod.
 - Make sure C# Dev Kit and the C# project are loaded correctly.
-    - Try to write something that is known to fail, e.g., `ThisIsWrong()` and check if an error marker appears as expected.
+    - Try to write something that is known to fail, e.g., `ThisIsWrong()` and check that an error marker appears as expected.
 - Make sure that there are no error markers in the IDE
-    - Only a mod without errors will load properly in the game
-- Make sure `modinfo.json` specifies all required namespaces in the `requires` field.
-    - By default, not all of the app domain (i.e. loaded libraries) are exposed to mods.
-- Use `UnityEngine.Debug.Log` to write information to the game's log and console.
-- Try to restart the game and see if errors are still present.
+    - Only a mod without errors will load properly in the game.
+- Make sure `modinfo.json` specifies all required libraries in the `requires` field.
+    - This is needed because not all of the app domain (i.e. loaded libraries) is exposed to mods by default.
+- Use `UnityEngine.Debug.Log` to write information to the game's console.
+- Try to restart the app and see if errors are still present.
 
 ### The .csproj file
 - The `.csproj` file holds information about the C# project structure of the mod.
@@ -46,7 +46,7 @@ code completion, error markers, parameter hints, go to definition, etc.
 
 ### The modinfo.json file
 - Information about the mod such as its name, description, and version should be specified in the file `modinfo.json`.
-- The information from `modinfo.json` can be accessed by the user in the game without activating the mod.
+- The information from `modinfo.json` can be accessed by the user in the game without enabling the mod.
 
 ### Mod Loading
 - Mods are loaded in alphabetical order.
@@ -59,7 +59,7 @@ code completion, error markers, parameter hints, go to definition, etc.
 - First, DLL files in the mod folder are loaded in alphabetical order.
 - Second, C# files in the mod folder are loaded in alphabetical order.
 - Thus, you can change the load order of your scripts be naming them accordingly, e.g., with a letter prefix.
-    - Example: `a-MyFirstFile.cs` would be loaded before `b-MyBestFile.cs`
+    - Example: `a-MyCoolFile.cs` would be loaded before `b-MyAwesomeFile.cs`
 
 export default ({ children }) => (
     <MdxLayoutComponent>{children}</MdxLayoutComponent>
