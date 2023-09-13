@@ -32,6 +32,8 @@ that provides IDE features such as code completion, error markers, parameter hin
     - Try to write something that is known to fail, e.g., `ThisIsWrong()` and check that an error marker appears as expected.
 - Make sure that there are no error markers in the IDE
     - Only a mod without errors will load properly in the game.
+- Make sure the dependencies of your scripts match their load order.
+    - Scripts of a mod are loaded in alphabetical order.
 - Make sure `modinfo.json` specifies all required libraries in the `requires` field.
     - This is needed because not all of the app domain (i.e. loaded libraries) is exposed to mods by default.
 - Use `UnityEngine.Debug.Log` to write information to the game's console.
@@ -47,6 +49,10 @@ that provides IDE features such as code completion, error markers, parameter hin
 ### The modinfo.json file
 - Information about the mod such as its name, description, and version should be specified in the file `modinfo.json`.
 - The information from `modinfo.json` can be accessed by the user in the game without enabling the mod.
+
+### The modsettings.json file
+- Instances of `IModSettings` are saved and loaded from the file `modsettings.json` of their corresponding mod folder.
+- There should only be a single IModSettings implementation per mod.
 
 ### Mod Loading
 - Mods are loaded in alphabetical order.
