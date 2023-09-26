@@ -34,7 +34,7 @@ that provides IDE features such as code completion, error markers, parameter hin
     - Only a mod without errors will load properly in the game.
 - Make sure the dependencies of your scripts match their load order.
     - Scripts of a mod are loaded in alphabetical order.
-- Make sure `modinfo.json` specifies all required libraries in the `requires` field.
+- Make sure `modinfo.yml` specifies all required assemblies in the `requiredAssemblies` field.
     - This is needed because not all of the app domain (i.e. loaded libraries) is exposed to mods by default.
 - Use `UnityEngine.Debug.Log` to write information to the game's console.
 - Try to restart the app and see if errors are still present.
@@ -46,9 +46,9 @@ that provides IDE features such as code completion, error markers, parameter hin
       plus the DLL files in the mod folder itself.
 - This file is used only by the IDE, not by the game.
 
-### The modinfo.json file
-- Information about the mod such as its name, description, and version should be specified in the file `modinfo.json`.
-- The information from `modinfo.json` can be accessed by the user in the game without enabling the mod.
+### The modinfo.yml file
+- Information about the mod such as its name, description, and version should be specified in the file `modinfo.yml`.
+- The information from `modinfo.yml` can be accessed by the user in the game without enabling the mod.
 
 ### The modsettings.json file
 - Instances of `IModSettings` are saved and loaded from the file `modsettings.json` of their corresponding mod folder.
@@ -56,7 +56,7 @@ that provides IDE features such as code completion, error markers, parameter hin
 
 ### Mod Loading
 - Mods are loaded in alphabetical order.
-- Enabled mod are loaded after
+- Enabled mod are loaded when
     - the game starts
     - a mod becomes enabled
 - Instances of classes from mods are created only after all enabled mods have been loaded
@@ -66,6 +66,19 @@ that provides IDE features such as code completion, error markers, parameter hin
 - Second, C# files in the mod folder are loaded in alphabetical order.
 - Thus, you can change the load order of your scripts be naming them accordingly, e.g., with a letter prefix.
     - Example: `a-MyCoolFile.cs` would be loaded before `b-MyAwesomeFile.cs`
+
+### Evaluate Code in the Console
+- The game's console can be used to evaluate C# code by using the `mod.eval` command.
+    - Example: `mod.eval (UnityEngine.Debug.Log("Hello world!"))`
+        - Note that the first pair of parentheses is needed to handle the console argument as a single argument when there is a space
+- Using statements can be used as well
+    - Example:
+        - `mod.eval (using UnityEngine)`
+        - `mod.eval (Debug.Log("Hello world!"))`
+- Example to change style of a UI element:
+    - `mod.eval (using UnityEngine.UIElements)`
+    - `mod.eval (GameObject.FindObjectOfType<UIDocument>().rootVisualElement.Q("logo").style.opacity = 0.1f))`
+- Loaded mods are not available in this code evaluation.
 
 export default ({ children }) => (
     <MdxLayoutComponent>{children}</MdxLayoutComponent>
