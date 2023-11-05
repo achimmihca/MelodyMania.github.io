@@ -25,7 +25,7 @@ easyToUseSection_list_1: Man braucht kein talentierter Sänger zu sein
 easyToUseSection_list_2: Man braucht keine Mikrofone zu kaufen
 easyToUseSection_list_3: Man braucht keine neue Konsole zu kaufen
 easyToUseSection_p_afterList: Jeder kann eine spaßige Zeit beim Singen haben! Einfach Melody&nbsp;Mania starten und <gradient>von der Tonhöhenerkennung leiten lassen</gradient>.
-easyToUseSection_p_beforeList: Lege direkt los mit den <gradient>enthaltenen Songs</gradient>. Oder nutze das <gradient>kostenlose Songpaket</gradient>, welches in wenigen Minuten im Spiel heruntergeladen werden kann.
+easyToUseSection_p_beforeList: Melody Mania ist leicht zu benutzen.
 easyToUseSection_title: Du kannst <gradient>sofort Spaß haben</gradient>
 featuresSection_featureCard_audience_detail: Ein Song kann zusätzlich ein Video abspielen. Damit wird es zum Vergnügen für Spieler und Zuschauer gleichermaßen.
 featuresSection_featureCard_audience: Unterhaltene Zuschauer
@@ -132,8 +132,6 @@ plannedFeaturesSection_plannedFeature_1: Online Multiplayer & Highscores
 plannedFeaturesSection_plannedFeature_2: Modding-Unterstützung
 plannedFeaturesSection_plannedFeature_3: Steam Workshop
 plannedFeaturesSection_plannedFeature_4: Lokalisierung
-plannedFeaturesSection_plannedFeature_5: Windows, macOS, Linux
-plannedFeaturesSection_plannedFeature_6: Android, iOS
 plannedFeaturesSection_title: Mehr in Kürze
 songEditorSection_afterFeatureList: Mit all diesen Funktionen ist das Erstellen eines Liedes zum Mitsingen <gradient>so leicht wie noch nie</gradient>.
 songEditorSection_featureList_1: Isolieren der Gesangsstimme für Tonhöhen- und Spracherkennung

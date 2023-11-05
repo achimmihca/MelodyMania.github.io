@@ -25,7 +25,7 @@ easyToUseSection_list_1: You don&apos;t need to be a talented singer.
 easyToUseSection_list_2: You don&apos;t need to buy a microphone.
 easyToUseSection_list_3: You don&apos;t need to buy a new console.
 easyToUseSection_p_afterList: Anyone can have a fun time singing! Just start Melody&nbsp;Mania and <gradient>let&nbsp;the&nbsp;game guide&nbsp;your&nbsp;pitch</gradient> to the next highscore.
-easyToUseSection_p_beforeList: Start playing immediately with the <gradient>included demo songs</gradient>. Or use the <gradient>free song package</gradient> that can be downloaded directly in the game.
+easyToUseSection_p_beforeList: Melody Mania is easy to use.
 easyToUseSection_title: You Can <gradient>Have Fun in Minutes</gradient>
 featuresSection_featureCard_audience_detail: Each song can have a background video or image. A delight for both, the audience and the singers.
 featuresSection_featureCard_audience: Entertained Audience
@@ -132,8 +132,6 @@ plannedFeaturesSection_plannedFeature_1: Online multiplayer & high scores
 plannedFeaturesSection_plannedFeature_2: Modding support
 plannedFeaturesSection_plannedFeature_3: Steam Workshop
 plannedFeaturesSection_plannedFeature_4: Localization
-plannedFeaturesSection_plannedFeature_5: Windows, macOS, Linux
-plannedFeaturesSection_plannedFeature_6: Android, iOS
 plannedFeaturesSection_title: More to Come
 songEditorSection_afterFeatureList: With all these features, creating a sing-along version for a game <gradient>has never been easier.</gradient>
 songEditorSection_featureList_1: Isolate vocals of songs for pitch detection and speech recognition
