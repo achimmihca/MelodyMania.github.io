@@ -27,12 +27,12 @@ const LegalNotice: NextPage = () => {
                     <h1>Impressum</h1>
 
                     <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-                    <p>Andreas Stange<br />
+                    <p>Andreas Achim Stange<br />
                     Celler Str. 40<br />
                     30161 Hannover</p>
 
                     <h2>Kontakt</h2>
-                    <p>Telefon: 01575-2873216<br />
+                    <p>Telefon: +49 1575-2873216<br />
                     E-Mail: email@melodymania.org</p>
                     <p>Ust-IdNr.: DE 359614789</p>
 
