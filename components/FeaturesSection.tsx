@@ -44,6 +44,7 @@ const featureCards = [
     { icon: "bi-mic", title: "featuresSection_featureCard_mics" },
     { icon: "bi-volume-up", title: "featuresSection_featureCard_micPlayback" },
     { icon: "bi-collection-play", title: "featuresSection_featureCard_openSongFormat" },
+    { icon: "bi-code-slash", title: "featuresSection_featureCard_modding" },
     { icon: "bi-camera", title: "featuresSection_featureCard_webcam" },
     { icon: "bi-circle-square", title: "featuresSection_featureCard_vocalsSeparation" },
     { icon: "bi-music-note-list", title: "featuresSection_featureCard_playlistsAndFavorites" },
@@ -129,7 +130,7 @@ const FeaturesSection = () =>
                         {
                             featureCards.map(featureCard => 
                                 <FeatureItem icon={featureCard.icon} title={ t(featureCard.title) }>
-                                    { t(featureCard.title + "_detail") }
+                                    <T i18nKey={ `${featureCard.title}_detail` } />
                                 </FeatureItem>) 
                         }
                     </div>
