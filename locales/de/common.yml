@@ -33,12 +33,16 @@ featuresSection_featureCard_companionApp_detail: Füge Songs der Warteschlange h
 featuresSection_featureCard_companionApp: Companion App
 featuresSection_featureCard_controllerSupport_detail: Steuere das Spiel mit einem kabellosen Controller statt an Tastatur und Maus zu hängen.
 featuresSection_featureCard_controllerSupport: Controllerunterstützung
+featuresSection_featureCard_embeddedBrowser_detail: Nutze Videos von YouTube oder anderen Webseiten mittels des im Spiel eingebetteten Browsers.
+featuresSection_featureCard_embeddedBrowser: Internet-Videos
 featuresSection_featureCard_gameModifiers_detail: Teste dein Können, zum Beispiel indem Liedtext und Noten für den aktuellen Spitzenreiter versteckt werden.
 featuresSection_featureCard_gameModifiers: Extras für Kenner
 featuresSection_featureCard_micPlayback_detail: Höre deine eigene Stimme über die Lautsprecher während du singst.
 featuresSection_featureCard_micPlayback: Mikrofon-Ausgabe
 featuresSection_featureCard_mics_detail: Verbinde dein Smartphone als Mikrofon. Benutze Headsets oder Karaoke-Mikrofone von anderen Spielen.
 featuresSection_featureCard_mics: Nutze vorhandene Mikros
+featuresSection_featureCard_modding_detail: Schreibe eigenen Code, um das Spiel zu verändern und zu erweitern. Lade Community-Mods für ein völlig neues Spielerlebnis. Für Details klicke <a href="https://melodymania.org/how-to-mods">hier</a>.
+featuresSection_featureCard_modding: Modding Unterstützung
 featuresSection_featureCard_openSongFormat_detail: Melody Mania unterstützt das verbreitete und offene UltraStar-Format, ebenso wie das industriebewährte MIDI-Format.
 featuresSection_featureCard_openSongFormat: Offenes Song-Format
 featuresSection_featureCard_playerAndMicProfiles_detail: Konfiguriere die Spieler und Mikrofone individuell. Wechsel Mikrofone schnell zwischen den Spielern.
@@ -65,8 +69,6 @@ featuresSection_featureCard_vocalsSeparation_detail: Teile Audiodateien auf in e
 featuresSection_featureCard_vocalsSeparation: Isolation der Gesangsstimme
 featuresSection_featureCard_webcam_detail: Singen macht noch mehr Freude, wenn man sich sehen kann! Benutze deine Kamera als Hintergrundvideo oder um dein Profilbild zu erstellen.
 featuresSection_featureCard_webcam: Webcam
-featuresSection_featureCard_embeddedBrowser_detail: Nutze Videos von YouTube oder anderen Webseiten mittels des im Spiel eingebetteten Browsers.
-featuresSection_featureCard_embeddedBrowser: Internet-Videos
 featuresSection_featureList_companionApp: Companion App als Mikrofon
 featuresSection_featureList_customSongs: Eigene Songs und Song-Editor
 featuresSection_featureList_deviceSupport: Controller- und Webcamunterstützung
@@ -129,9 +131,8 @@ page_legalNotice: Impressum
 page_privacyPolicy: Datenschutzerklärung
 plannedFeaturesSection_detail: "Melody&nbsp;Mania macht schon jetzt Spaß.<br /> Trotzdem: Es gibt noch viele weitere geplante Features und TODOs. Folge uns bei Social Media, um die Reise von Melody&nbsp;Mania zum nächsten Partykracher zu begleiten."
 plannedFeaturesSection_plannedFeature_1: Online Multiplayer & Highscores
-plannedFeaturesSection_plannedFeature_2: Modding-Unterstützung
-plannedFeaturesSection_plannedFeature_3: Steam Workshop
-plannedFeaturesSection_plannedFeature_4: Lokalisierung
+plannedFeaturesSection_plannedFeature_2: Steam Workshop
+plannedFeaturesSection_plannedFeature_3: Lokalisierung
 plannedFeaturesSection_title: Mehr in Kürze
 songEditorSection_afterFeatureList: Mit all diesen Funktionen ist das Erstellen eines Liedes zum Mitsingen <gradient>so leicht wie noch nie</gradient>.
 songEditorSection_featureList_1: Isolieren der Gesangsstimme für Tonhöhen- und Spracherkennung
