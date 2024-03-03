@@ -1,0 +1,33 @@
+import MdxLayoutComponent from '../components/MdxLayoutComponent'
+import TutorialVideo from '../components/TutorialVideo'
+
+# Steam Workshop
+- Melody Mania integrates [Steam Workshop](https://steamcommunity.com/app/2394070/workshop/),
+which enables users to create, share, and download user-generated content.
+
+- Melody Mania supports custom mods, themes, player profile images, and browser scripts
+from Steam Workshop.
+
+## <span id="how-to-use-workshop-items">How to Use Wokshop Items</span>
+- Browse Steam Workshop items [here](https://steamcommunity.com/workshop/browse/?appid=2394070).
+- Subscribe to items that you want to install.
+- Your subscribed items will be downloaded when the game starts.
+    - TIP: Steam saves downloaded Workshop items in `Steam/steamapps/workshop/content/APP_ID/WORKSHOP_ITEM_ID`, where the `APP_ID` of Melody Mania is 2394070.
+
+## How to Create Workshop Items
+- Creating a Workshop Item means uploading a folder,
+  plus metadata like title, description, and a preview image.
+- Navigate to the development options in Melody Mania and click the `Publish Workshop Item` button. This will open the upload dialog.
+    - Select the folder that should be uploaded and fill the fields for the title, description, etc.
+    - Click the `Publish` button to start the upload.
+- NOTE: It may take few minutes before a new item appears on the Steam Workshop website.
+
+## How to Edit Workshop Items
+- You can only edit your own Workshop items, i.e., items that you have uploaded.
+- You need to [subscribe and download](#how-to-use-workshop-items) an item first to edit it.
+- Select the Workshop item to be edited in the upload dialog and set only the value of fields that you want to change.
+    - The value of fields that have not been set will not be changed.
+
+export default ({ children }) => (
+    <MdxLayoutComponent>{children}</MdxLayoutComponent>
+);
