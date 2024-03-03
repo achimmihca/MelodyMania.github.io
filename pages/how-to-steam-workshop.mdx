@@ -15,8 +15,13 @@ from Steam Workshop.
     - TIP: Steam saves downloaded Workshop items in `Steam/steamapps/workshop/content/APP_ID/WORKSHOP_ITEM_ID`, where the `APP_ID` of Melody Mania is 2394070.
 
 ## How to Create Workshop Items
-- Creating a Workshop Item means uploading a folder,
+- Creating a Workshop item means uploading a folder,
   plus metadata like title, description, and a preview image.
+- Melody Mania searches for content in the following subfolders of a Workshop item
+    - `Mods` for [mods](/how-to-mods)
+    - `Themes` for themes
+    - `PlayerProfileImages` for player profile images
+    - `WebViewScripts` for browser scripts
 - Navigate to the development options in Melody Mania and click the `Publish Workshop Item` button. This will open the upload dialog.
     - Select the folder that should be uploaded and fill the fields for the title, description, etc.
     - Click the `Publish` button to start the upload.
