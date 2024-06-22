@@ -1,7 +1,5 @@
-import { useEffect } from "react"
-import { useUnescapedTranslations, useTranslationUnescaped } from "../lib/utils"
-import { T } from "./T"
-import ReactDOM from "react-dom"
+import { JSX, useEffect } from "react"
+import { createRoot } from 'react-dom/client'
 
 const ProductFeatureColumn = (params: { productValue: any }): JSX.Element =>
 {
@@ -53,7 +51,7 @@ const FeatureComparisonTable = () =>
                 const tableElement = document.getElementById('feature-comparison-table');
                 if (tableElement)
                 {
-                    ReactDOM.render(<FeatureComparisonTableResolved comparisonData={data}/>, tableElement)
+                    createRoot(tableElement).render(<FeatureComparisonTableResolved comparisonData={data}/>)
                 }
             }
           })

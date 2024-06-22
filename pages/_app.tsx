@@ -8,18 +8,22 @@ import { Mulish, Kanit, Roboto, Inter } from '@next/font/google'
 const mulish = Mulish({
     weight: '400',
     display: 'fallback',
+    subsets: ['latin', 'latin-ext']
 })
 const kanit = Kanit({
     weight: '400',
     display: 'fallback',
+    subsets: ['latin', 'latin-ext']
 })
 const inter = Inter({
     weight: '400',
     display: 'fallback',
+    subsets: ['latin', 'latin-ext']
 })
 const roboto = Roboto({
     weight: '400',
     display: 'fallback',
+    subsets: ['latin', 'latin-ext']
 })
 
 // The bootstrap import has issues when document is not defined (server side rendering maybe?)
