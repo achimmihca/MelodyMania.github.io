@@ -15,9 +15,6 @@ class MyDocument extends Document
                     <meta name="description" content="" />
                     <meta name="author" content="" />
                     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-                    {/* Visitor Statistics by Clicky.com  */}
-                    <script async src="//static.getclicky.com/101402942.js"></script>
                 </Head>
                 <body id="page-top">
                     <Main />
