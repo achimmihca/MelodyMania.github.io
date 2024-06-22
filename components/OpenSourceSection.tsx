@@ -17,10 +17,6 @@ const OpenSourceSection = () =>
         setInnerHtml("openSourceSection_madeWithUnity_p_2", t("openSourceSection_madeWithUnity_p_2", {
             madeWithUnityLink: madeWithUnityLink
         }))
-
-        setInnerHtml("openSourceSection_beyondThisGame_p_3", t("openSourceSection_beyondThisGame_p_3", {
-            paperLink: paperLink
-        }))
     })
 
     return <>
