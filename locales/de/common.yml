@@ -8,10 +8,10 @@ communityCreatedSongs_event: Singe bei einer Feier oder einem Event
 communityCreatedSongs_filmAndTV: Singe bekannte Lieder aus Film und TV
 communityCreatedSongs_games: Singe Soundtracks von Videospielen
 communityCreatedSongs_regional: Singe Dialekt aus deiner Region
+communityCreatedSongs_searchHint: Suche mit Google nach Titel oder Interpret
 communityCreatedSongs_subtitle: Eine große Community hat schon tausende von Songs im UltraStar- und MIDI-Format erstellt.
 communityCreatedSongs_title: Singe deine Lieblingslieder!
 communityCreatedSongs_vocaloid: Singe deine liebsten Vocaloid und UTAU Songs
-communityCreatedSongs_searchHint: Suche mit Google nach Titel oder Interpret
 cookieBanner_description: Diese Website verwendet Cookies, um Ihr Surferlebnis zu verbessern und den Datenverkehr zu analysieren. Wenn Sie auf „Alle akzeptieren" klicken, stimmen Sie der Anwendung von Cookies zu.
 cookieBanner_title: Wir schätzen Ihre Privatsphäre
 crossPlatformSection_p_1: Melody&nbsp;Mania ist eine cross-platform Anwendung. Das Spiel wird zuerst für Windows veröffentlich, gefolgt von MacOS, Linux, Android, und iOS.<br /> Zudem könnten Android TV und tvOS zukünftig unterstützt werden.
@@ -43,6 +43,8 @@ featuresSection_featureCard_mics_detail: Verbinde dein Smartphone als Mikrofon. 
 featuresSection_featureCard_mics: Nutze vorhandene Mikros
 featuresSection_featureCard_modding_detail: Schreibe eigenen Code, um das Spiel zu verändern und zu erweitern. Lade Community-Mods für ein völlig neues Spielerlebnis. Für Details klicke <a href="https://melodymania.org/how-to-mods">hier</a>.
 featuresSection_featureCard_modding: Modding Unterstützung
+featuresSection_featureCard_onlineMultiplayer_detail: Vernetze dich online mit Freunden, durchstöbert gemeinsam eure Songsammlung, und seht gegenseitig wie ihr singt.
+featuresSection_featureCard_onlineMultiplayer: Online Multiplayer
 featuresSection_featureCard_openSongFormat_detail: Melody Mania unterstützt das verbreitete und offene UltraStar-Format, ebenso wie das industriebewährte MIDI-Format.
 featuresSection_featureCard_openSongFormat: Offenes Song-Format
 featuresSection_featureCard_playerAndMicProfiles_detail: Konfiguriere die Spieler und Mikrofone individuell. Wechsel Mikrofone schnell zwischen den Spielern.
