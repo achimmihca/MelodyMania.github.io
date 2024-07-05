@@ -37,6 +37,7 @@ const featureCards = [
     { icon: "bi-trophy", title: "featuresSection_featureCard_teamAndTournament" },
     { icon: "bi-fire", title: "featuresSection_featureCard_gameModifiers" },
     { icon: "bi-stack", title: "featuresSection_featureCard_songQueueAndMedleys" },
+    { icon: "bi-cloud-check", title: "featuresSection_featureCard_onlineMultiplayer" },
 
     // Technical features
     { icon: "bi-youtube", title: "featuresSection_featureCard_embeddedBrowser" },

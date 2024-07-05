@@ -35,7 +35,7 @@ const Home: NextPage = () =>
             <SongEditorSection />
             {/* <CrossPlatformSection /> */}
             <OpenSourceSection />
-            <PlannedFeaturesSection />
+            {/* <PlannedFeaturesSection /> */}
             <NewsletterSection />
             {/* <DownloadCallToActionSection /> */}
             <FooterSection />
