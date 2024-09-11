@@ -95,7 +95,7 @@ const FeaturesSection = () =>
                 {/* Game trailer  */}
                 <div className="row my-5 justify-content-center">
                     <div className="col-md-6">
-                        <Video src="/videos/trailer.webm" />
+                        <Video src="/videos/trailer-720p.mp4" />
                     </div>
                 </div>
     
