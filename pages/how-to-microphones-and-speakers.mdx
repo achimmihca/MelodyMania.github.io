@@ -1,13 +1,17 @@
 import MdxLayoutComponent from '../components/MdxLayoutComponent'
 
-# Microphone Configuration
+# Recording Options
+
+The following explains recording options and gives tips for microphone and speaker configuration.
+
+## Microphone Configuration
 Melody Mania supports several kinds of microphones,
 e.g., headset microphones, USB microhpones, and smartphone microphones via the [Companion App](/how-to-companion-app). 
 
 - TIP: Make sure that your headset or USB microphone works as expected in other apps.
 - TIP: Disable microphones that you do not want to use in the settings.
 
-## Delay
+### Delay
 Configure the microphone delay such that the timing of the note recording matches your singing.
     - TIP: The delay value in Melody Mania is typically between 100ms and 300ms.
     - TIP: This option should be as low as possible.
@@ -27,25 +31,42 @@ Melody Mania can do an automatic calibration of the microphone delay for you. Th
 
 This will measure the round-trip time from playing audio to analyzing microphone input.
 
-## Mic Amplification
+### Mic Amplification
 Increase the amplification until your microphone accepts input from you in normal voice volume.
 - TIP: This option should be as low as possible
 
-## Mic Noise Suppression
+### Mic Noise Suppression
 Configure the noise suppression if your microphone is mistaken ambient noise for singing.
 
 - TIP: This option should be as low as possible
 
 This option will ignore input below the configured threshold volume.
 
-## Assigning Mics to Players
+### Multi-Channel and Low-Latency Mode
+By default, the game assumes microphones with a single channel.
+To use different channels of a microphone (e.g. left / right), you have to enable the multi-channel and low-latency mode.
+
+- NOTE: This mode uses the third-part library PortAudio, instead of the more limited Unity API.
+
+### Microphone Playback
+To hear your own singing, enable the option to play recorded audio.
+- TIP: Enable multi-channel and low-latency mode to reduce latency.
+- TIP: For best results, use a dedicated audio interface that directly outputs the microphone input on a speaker ([example](https://www.m-audio.com/products/view/m-track)).
+
+### Assigning Mics to Players
 - Microphones are assigned to players in song select before starting the song.
 - A free microphone is assigned automatically to a selected player if possible.
     - TIP: Disable microphones that should not be used for singing in the settings
 - You can change the microphone of a player manually by clicking the microphone button.
 - TIP: Use the same name for your player profile and Companion App to enable automatic matching.
 
-# Speaker Configuration
+### Troubleshooting
+- Test your microhpones in other apps.
+    - If your mic works in Windows, then it typically also works in the game.
+    - TIP: [Audacity](https://www.audacityteam.org) is a suited app for testing microphones. It is free and uses a similar audio backend as the game (PortAudio).
+- Enable multi-channel and low-latency mode (see above) if needed
+
+## Speaker Configuration
 Prefer wired speakers over wireless speakers.
 - Bluetooth and other wireless speakers typically have a higher latency. This means there is a larger gap between playing the music in game and hearing it in your ears. This may shift the timing of your singing, and thus the timing of the note recording in game.
 - As alternative, try to increase the configured mic delay to counter the increased latency of wireless speakers.
