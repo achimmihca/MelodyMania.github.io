@@ -139,16 +139,10 @@ plannedFeaturesSection_plannedFeature_3: Localization
 plannedFeaturesSection_title: More to Come
 songEditorSection_afterFeatureList: With all these features, creating a sing-along version for a game <gradient>has never been easier.</gradient>
 songEditorSection_featureList_1: Isolate vocals of songs for pitch detection and speech recognition
-songEditorSection_featureList_10: Add notes via button tapping or by dictating lyrics
-songEditorSection_featureList_11: "&hellip;and much more!"
-songEditorSection_featureList_2: Edit notes via drag & drop
-songEditorSection_featureList_3: Change lyrics
-songEditorSection_featureList_4: Add videos and images
-songEditorSection_featureList_5: Edit song properties
-songEditorSection_featureList_6: Copy & paste notes
-songEditorSection_featureList_7: Import MIDI files
-songEditorSection_featureList_8: Assign notes to different players
-songEditorSection_featureList_9: Quality analysis and hints
+songEditorSection_featureList_2: Import MIDI files
+songEditorSection_featureList_3: Dictate lyrics or use button tapping
+songEditorSection_featureList_4: Quality analysis and hints
+songEditorSection_featureList_5: "&hellip;and much more!"
 songEditorSection_furtherDocumentation_documentation: documentation
 songEditorSection_furtherDocumentation_video: video
 songEditorSection_furtherDocumentation: Check out the {{videoLink}} or {{documentationLink}} for details.

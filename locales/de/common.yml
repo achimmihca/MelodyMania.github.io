@@ -139,16 +139,10 @@ plannedFeaturesSection_plannedFeature_3: Lokalisierung
 plannedFeaturesSection_title: Mehr in Kürze
 songEditorSection_afterFeatureList: Mit all diesen Funktionen ist das Erstellen eines Liedes zum Mitsingen <gradient>so leicht wie noch nie</gradient>.
 songEditorSection_featureList_1: Isolieren der Gesangsstimme für Tonhöhen- und Spracherkennung
-songEditorSection_featureList_10: Noten hinzufügen via Button-Tapping oder Diktierfunktion
-songEditorSection_featureList_11: "&hellip;und vieles mehr!"
-songEditorSection_featureList_2: Noten verändern mittels Drag-and-drop
-songEditorSection_featureList_3: Liedtexte bearbeiten
-songEditorSection_featureList_4: Videos und Bilder verknüpfen
-songEditorSection_featureList_5: Songinformationen anpassen
-songEditorSection_featureList_6: Kopieren & Einfügen von Noten
-songEditorSection_featureList_7: MIDI-Dateien importieren
-songEditorSection_featureList_8: Noten den Spielern zuweisen
-songEditorSection_featureList_9: Qualitätshinweise und Tipps
+songEditorSection_featureList_2: MIDI-Dateien importieren
+songEditorSection_featureList_3: Diktiere Text oder nutze Button-Tapping
+songEditorSection_featureList_4: Qualitätshinweise und Tipps
+songEditorSection_featureList_5: "&hellip;und vieles mehr!"
 songEditorSection_furtherDocumentation_documentation: Dokumentation
 songEditorSection_furtherDocumentation_video: Video
 songEditorSection_furtherDocumentation: Schau dir das {{videoLink}} an oder in die {{documentationLink}} für weitere Infos.
