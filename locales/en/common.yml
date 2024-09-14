@@ -6,6 +6,7 @@ button_ok: OK
 communityCreatedSongs_currentTopHits: Sing current top hits
 communityCreatedSongs_event: Sing at a convention or event
 communityCreatedSongs_filmAndTV: Sing popular songs from film and TV
+communityCreatedSongs_footer: Celebrate the music you love, whether you want to go for epic ballads or go wild with the hottest party anthems.
 communityCreatedSongs_games: Sing amazing game soundtracks
 communityCreatedSongs_regional: Sing dialect from your region
 communityCreatedSongs_searchHint: Search with Google for song title or artist
@@ -83,23 +84,23 @@ featuresSection_featureList_songQueueAndMedleys: Song queue and medleys
 featuresSection_featureList_teamAndTournament: Team and tournament game modes
 featuresSection_featureList_title: "With Melody&nbsp;Mania, <emphasize>YOU&apos;LL GET</emphasize>:"
 featuresSection_featureList_vocalsSeparation: AI powered isolation of vocals
-featuresSection_imagineList_1: Throw a singing party with family and friends
-featuresSection_imagineList_2: Break the highscore or sing duets together
-featuresSection_imagineList_3: Create the songs you want, no matter your taste in music
+featuresSection_imagineList_1: Turn any night into an epic karaoke showdown
+featuresSection_imagineList_2: Throw a singing party with friends and family
+featuresSection_imagineList_3: Break the highscore or sing duets together
 featuresSection_imagineList_4: Use your smartphone as mic, no need to buy new equipment
-featuresSection_imagineList_5: Mute the vocals of your local songs for a classic karaoke experience
+featuresSection_imagineList_5: Create the songs you want, no matter your taste in music
 featuresSection_imagineList_embeddedBrowser: Use video platforms such as YouTube directly in game
 featuresSection_imagineList_title: Imagine what it would be like to...
 introSection_discordName: Discord
 introSection_documentationAndHelpLinks: Join the growing community on {{discordLink}}.
 introSection_faqName: FAQ
 introSection_follow_prefix: Follow the project on
-introSection_p_1: Melody&nbsp;Mania is a singing game with boundless possibilities!
-introSection_p_2: Players sing along their favorite songs and try to hit notes for points. Feel like a superstar while you break the highscore! Invite your family and friends to rock the virtual stage together!
-introSection_title: Enjoy a Fun Singing Party!
+introSection_p_1: Feel like a superstar, celebrate music, and enjoy unforgettable memories with family and friends when you rock the virtual stage together and break the high score!
+introSection_p_2: Melody&nbsp;Mania is a fun karaoke game that never gets old. Have a blast while you sing along your favorite songs for points. A variety of modes lets you play with others or compete against them. An open song format and AI powered editor tools provide boundless possibilites.
+introSection_title: Enjoy a Fun Singing Party
 introSection_typewriterText_1: sing your favorite songs?
 introSection_typewriterText_2: challenge your friends?
-introSection_typewriterText_3: feel like a superstar?
+introSection_typewriterText_3: immerse in music?
 introSection_typewriterText_prefix: Want to
 introSection_wikiName: wiki
 navigationSection_download: Download
