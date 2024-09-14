@@ -6,6 +6,7 @@ button_ok: OK
 communityCreatedSongs_currentTopHits: Singe aktuelle Hits
 communityCreatedSongs_event: Singe bei einer Feier oder einem Event
 communityCreatedSongs_filmAndTV: Singe bekannte Lieder aus Film und TV
+communityCreatedSongs_footer: Feiere die Musik, die du liebst, von epischer Ballade bis heißesten Partyhymnen.
 communityCreatedSongs_games: Singe Soundtracks von Videospielen
 communityCreatedSongs_regional: Singe Dialekt aus deiner Region
 communityCreatedSongs_searchHint: Suche mit Google nach Titel oder Interpret
@@ -83,23 +84,23 @@ featuresSection_featureList_songQueueAndMedleys: Warteschlange und Medleys
 featuresSection_featureList_teamAndTournament: Team- und Turnierspielmodi
 featuresSection_featureList_title: "Mit Melody&nbsp;Mania <emphasize>BEKOMMST DU</emphasize>:"
 featuresSection_featureList_vocalsSeparation: Isolation der Gesangsstimme
-featuresSection_imagineList_1: Bei deiner Party mit Familie und Freunden zu singen
-featuresSection_imagineList_2: Den Highscore zu knacken oder ein Duett zusammen zu singen
-featuresSection_imagineList_3: Die Songs zu erstellen, die DU möchtest
+featuresSection_imagineList_1: Die Nacht in einen epischen Karaoke-Showdown zu verwandeln
+featuresSection_imagineList_2: Bei deiner Party mit Familie und Freunden zu singen
+featuresSection_imagineList_3: Den Highscore zu knacken oder ein Duett zusammen zu singen
 featuresSection_imagineList_4: Dein Smartphone als Mikrofon zu benutzen
-featuresSection_imagineList_5: Gesang stumm zu schalten für ein klassisches Karaoke-Erlebnis
+featuresSection_imagineList_5: Die Songs zu erstellen, die DU möchtest
 featuresSection_imagineList_embeddedBrowser: Video-Plattformen wie YouTube direkt im Spiel zu nutzen
 featuresSection_imagineList_title: Stell dir vor, wie es wäre...
 introSection_discordName: Discord
 introSection_documentationAndHelpLinks: Werde Teil der wachsenden Community auf {{discordLink}}.
 introSection_faqName: FAQ
 introSection_follow_prefix: Folge uns auf 
-introSection_p_1: Melody&nbsp;Mania ist ein Spiel zum Mitsingen mit unbegrenzten Möglichkeiten!
-introSection_p_2: Spieler singen ihre Lieblingslieder und versuchen dabei, die richtige Tonhöhe zu treffen, um Punkte zu bekommen. Fühl dich wie ein Superstar während du den Highscore knackst! Lade deine Freunde und Familie ein, zusammen die virtuelle Bühne zu rocken!
-introSection_title: Willkommen zur Singspielparty!
+introSection_p_1: Fühle dich wie ein Superstar, feiere die Musik, und genieße unvergessliche Erinnerungen mit Familie und Freunden, während ihr gemeinsam die virtuelle Bühne rockt und den Highscore knackt!
+introSection_p_2: Melody&nbsp;Mania ist ein unterhaltsames Karaoke-Spiel, das nie langweilig wird. Ein Riesenspaß erwartet dich beim beim Mitsingen deiner Lieblingslieder, um Punkte zu sammeln. In verschiedenen Modi kannst du mit anderen zusammen spielen oder gegen sie antreten. Ein offenes Songformat und KI-gestützte Editor-Tools bieten grenzenlose Möglichkeiten.
+introSection_title: Willkommen zur Singspielparty
 introSection_typewriterText_1: deine Lieblingslieder singen?
 introSection_typewriterText_2: deine Freunde herausfordern?
-introSection_typewriterText_3: dich wie ein Superstar fühlen?
+introSection_typewriterText_3: dich in der Musik vertiefen?
 introSection_typewriterText_prefix: Du willst
 introSection_wikiName: Wiki
 navigationSection_download: Download

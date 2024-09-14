@@ -82,6 +82,16 @@ const CommunityCreatedSongsSection = () => {
                     <SingIdeaEntry title={ t("communityCreatedSongs_event") } image="/img/halloween-6784081.jpg"/>
                     <SingIdeaEntry title={ t("communityCreatedSongs_regional") } image="/img/singer-250933_1920-cut.jpg"/>
                 </div>
+                <hr className="bg-light"/>
+            </div>
+            
+
+            <div className="container px-md-5">
+                <div className="row justify-content-center">
+                    <div className="col-xl-8">
+                        <div className="fs-3 text-white font-alt"><T i18nKey="communityCreatedSongs_footer" /></div>
+                    </div>
+                </div>
             </div>
         </section>
 
