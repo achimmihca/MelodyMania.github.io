@@ -25,8 +25,8 @@ const SongEditorSection = () =>
     <section id="song-editor" className="bg-light">
         <div className="container px-5" style={{marginTop: '-80px'}}>
             <div className="row align-items-center justify-content-center justify-content-lg-between">
-                <div className="col-lg-1"></div>
-                <div className="col-12 col-lg-3 align-self-stretch">
+                <div className="col-0 col-lg-1"></div>
+                <div className="col-12 col-md-3 align-self-stretch">
                     <div className="image-container" style={{width: "100%", height: "100%", borderRadius: "200px", overflow: "hidden"}}>
                         <Image src="/img/musician-664432.jpg" alt="musician" layout="fill" objectFit="cover" />
                     </div>
@@ -38,41 +38,18 @@ const SongEditorSection = () =>
             <div className="row align-items-center justify-content-center justify-content-lg-between">
                 <div className="col-12 col-lg-8">
                     <h2 className="display-4 mb-4 font-alt"><T i18nKey="songEditorSection_subtitle" /></h2>
-                    <div className="">
-                        <p><T i18nKey="songEditorSection_p_1" /></p>
-                        <p><T i18nKey="songEditorSection_p_2" /></p>
+                    <p><T i18nKey="songEditorSection_p_1" /></p>
+                    <p><T i18nKey="songEditorSection_p_2" /></p>
 
-                        <div className="row" >
-                            <div className="col-12 col-md-6">
-                                <ul className="item-symbol-tools">
-                                    <li><T i18nKey="songEditorSection_featureList_1" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_2" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_3" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_4" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_5" /></li>
-                                </ul>
-                            </div>
-                            <div className="col-12 col-md-6">
-                                <ul className="item-symbol-tools">
-                                    <li><T i18nKey="songEditorSection_featureList_6" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_7" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_8" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_9" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_10" /></li>
-                                    <li><T i18nKey="songEditorSection_featureList_11" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="row" >
-                            <div className="col-auto">
-                                <p><T i18nKey="songEditorSection_afterFeatureList" /></p>
-                                <p id="songEditorSection_furtherDocumentation">{ /* content set in useEffect */ }</p>
-                            </div>
+                    <div className="row" >
+                        <div className="col-auto">
+                            <p><T i18nKey="songEditorSection_afterFeatureList" /></p>
+                            <p id="songEditorSection_furtherDocumentation">{ /* content set in useEffect */ }</p>
                         </div>
                     </div>
                 </div>
-                <div className="col-4 d-none d-lg-block">
-                    <div className="image-container align-self-stretch" style={{maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", display: 'table'}}>
+                <div className="col-0 col-lg-4 align-self-stretch">
+                    <div className="image-container" style={{width: "100%", height: "100%", borderRadius: "200px", overflow: "hidden"}}>
                         <Image src="img/female-1299085.svg" alt="woman singing" layout="fill" />
                     </div>
                 </div>
