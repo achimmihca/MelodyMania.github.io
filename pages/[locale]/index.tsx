@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import NavigationSection from '../../components/NavigationSection'
 import IntroSection from '../../components/IntroSection'
 import CommunityCreatedSongsSection from '../../components/CommunityCreatedSongsSection'
-import FeaturesSection from '../../components/FeaturesSection'
+import FeatureOverviewSection from '../../components/FeatureOverviewSection'
 import SongEditorSection from '../../components/SongEditorSection'
 import PlannedFeaturesSection from '../../components/PlannedFeaturesSection'
 import DownloadCallToActionSection from '../../components/DownloadCallToActionSection'
@@ -18,6 +18,8 @@ import { makeStaticProps } from '../../lib/getStatic'
 import { getStaticPaths } from '../../lib/getStatic'
 import Image from "next/legacy/image"
 import ComingSoonSection from '../../components/ComingSoonSection'
+import FeatureCardsSection from '../../components/FeatureCardsSection'
+import CompanionAppSection from '../../components/CompanionAppSection'
 const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
 
@@ -29,7 +31,9 @@ const Home: NextPage = () =>
         <>
             <NavigationSection />
             <IntroSection />
-            <FeaturesSection />
+            <FeatureOverviewSection />
+            <CompanionAppSection />
+            <FeatureCardsSection />
             <CommunityCreatedSongsSection />
             <EasyToUseSection />
             <SongEditorSection />
