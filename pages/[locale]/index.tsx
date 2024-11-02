@@ -20,6 +20,7 @@ import Image from "next/legacy/image"
 import ComingSoonSection from '../../components/ComingSoonSection'
 import FeatureCardsSection from '../../components/FeatureCardsSection'
 import CompanionAppSection from '../../components/CompanionAppSection'
+import TestimonialSection from '../../components/TestimonialSection'
 const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
 
@@ -40,6 +41,7 @@ const Home: NextPage = () =>
             {/* <CrossPlatformSection /> */}
             <OpenSourceSection />
             {/* <PlannedFeaturesSection /> */}
+            <TestimonialSection />
             <NewsletterSection />
             {/* <DownloadCallToActionSection /> */}
             <FooterSection />
