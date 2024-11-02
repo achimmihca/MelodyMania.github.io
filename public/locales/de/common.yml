@@ -13,6 +13,12 @@ communityCreatedSongs_searchHint: Suche mit Google nach Titel oder Interpret
 communityCreatedSongs_subtitle: Eine große Community hat schon tausende von Songs im UltraStar-Format erstellt.
 communityCreatedSongs_title: Singe deine Lieblingslieder!
 communityCreatedSongs_vocaloid: Singe deine liebsten Vocaloid und UTAU Songs
+companionAppSection_feature_easySetup: "<strong>Einfache Einrichtung</strong>: Verbindet sich mühelos, denn die App findet das Spiel automatisch im gleichen WLAN."
+companionAppSection_feature_microphone: "<strong>Mikrofon</strong>: Verwende dein Smartphone als ein hochwertiges Mikrofon im Spiel."
+companionAppSection_feature_remoteControl: "<strong>Fernbedienung</strong>: Bewege dich frei, während du die Kontrolle über Wiedergabe und Lautstärke behälst."
+companionAppSection_feature_sonqQueue: "<strong>Wiedergabeliste</strong>: Durchsuche Lieder und fülle die Wiedergabeliste, während andere noch singen."
+companionAppSection_p: Mit der kostenlosen Companion&nbsp;App für Android und iOS wird das Singen für jeden zum Kinderspiel.
+companionAppSection_title: Companion App
 cookieBanner_description: Diese Website verwendet Cookies, um Ihr Surferlebnis zu verbessern und den Datenverkehr zu analysieren. Wenn Sie auf „Alle akzeptieren" klicken, stimmen Sie der Anwendung von Cookies zu.
 cookieBanner_title: Wir schätzen Ihre Privatsphäre
 crossPlatformSection_p_1: Melody&nbsp;Mania ist eine cross-platform Anwendung. Das Spiel wird zuerst für Windows veröffentlich, gefolgt von MacOS, Linux, Android, und iOS.<br /> Zudem könnten Android TV und tvOS zukünftig unterstützt werden.
@@ -114,8 +120,8 @@ navigationSection_features_songEditor: Song-Editor
 navigationSection_features: Navigieren
 navigationSection_home: Home
 navigationSection_newsletter: Newsletter
-navigationSection_testimonial: Spielermeinungen
 navigationSection_pressKit: Press Kit
+navigationSection_testimonial: Spielermeinungen
 newsletterSection_email_hint: E-Mail-Adresse
 newsletterSection_submit: JETZT ABONNIEREN
 newsletterSection_subtitle: Verpasse keine Neuerungen mehr.

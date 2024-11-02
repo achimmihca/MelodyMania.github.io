@@ -13,14 +13,14 @@ const CompanionAppSection = () =>
           <div className="col-lg-6">
             {/* <!-- Mashead text and app badges--> */}
             <div className="mb-5 mb-lg-0 text-center text-lg-start">
-              <h1 className="display-3 lh-1 mb-3">Companion App</h1>
+              <h1 className="display-3 lh-1 mb-3"><T i18nKey="companionAppSection_title" /></h1>
               <div className="text-muted">
-                <p className="lead fw-normal text-muted mb-5">The free Companion&nbsp;App for Android and iOS makes singing a breeze for everyone.</p>
+                <p className="lead fw-normal text-muted mb-5"><T i18nKey="companionAppSection_p" /></p>
                 <ul>
-                  <li><strong>Microphone</strong>: Use your smartphone as a high-quality microphone in the game.</li>
-                  <li><strong>Song Queue</strong>: Browse and enqueue songs while others are still singing.</li>
-                  <li><strong>Remote Control</strong>: Move freely while you stay in control of playback and volume.</li>
-                  <li><strong>Easy Setup</strong>: Connect effortlessly as the app finds its game automatically from the same Wi-Fi.</li>
+                  <li><T i18nKey="companionAppSection_feature_microphone"/></li>
+                  <li><T i18nKey="companionAppSection_feature_sonqQueue"/></li>
+                  <li><T i18nKey="companionAppSection_feature_remoteControl"/></li>
+                  <li><T i18nKey="companionAppSection_feature_easySetup"/></li>
                 </ul>
               </div>
             </div>

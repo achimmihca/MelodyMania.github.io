@@ -13,6 +13,12 @@ communityCreatedSongs_searchHint: Search with Google for song title or artist
 communityCreatedSongs_subtitle: A big community already created thousands of songs in the UltraStar format.
 communityCreatedSongs_title: Sing your favorite songs!
 communityCreatedSongs_vocaloid: Sing your favorite Vocaloid and UTAU songs
+companionAppSection_feature_easySetup: "<strong>Easy Setup</strong>: Connects effortlessly as the app finds its game automatically from the same Wi-Fi."
+companionAppSection_feature_microphone: "<strong>Microphone</strong>: Use your smartphone as a high-quality microphone in the game."
+companionAppSection_feature_remoteControl: "<strong>Remote Control</strong>: Move freely while you stay in control of playback and volume."
+companionAppSection_feature_sonqQueue: "<strong>Song Queue</strong>: Browse and enqueue songs while others are still singing."
+companionAppSection_p: The free Companion&nbsp;App for Android and iOS makes singing a breeze for everyone.
+companionAppSection_title: Companion App
 cookieBanner_description: We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
 cookieBanner_title: We value your privacy
 crossPlatformSection_p_1: Melody&nbsp;Mania is a cross-platform application. Its initial release will be for Windows, followed by MacOS, Linux, Android, and iOS.<br /> Android TV and tvOS might be supported in the future as well.
@@ -114,8 +120,8 @@ navigationSection_features_songEditor: Song Editor
 navigationSection_features: Navigate
 navigationSection_home: Home
 navigationSection_newsletter: Newsletter
-navigationSection_testimonial: Testimonials
 navigationSection_pressKit: Press Kit
+navigationSection_testimonial: Testimonials
 newsletterSection_email_hint: Email address
 newsletterSection_submit: SUBSCRIBE NOW
 newsletterSection_subtitle: Don&apos;t miss any more updates.
