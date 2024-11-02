@@ -11,7 +11,7 @@ const TestimonialSection = () =>
       <div className="container">
         <header className="text-center mb-1">
           <span className="bi bi-chat-quote display-3" />
-          <h1 className="mt-4 font-weight-bold">Real Reviews, Real Fun</h1>
+          <h1 className="mt-4 font-weight-bold"><T i18nKey="testimonialSection_title"/></h1>
           {/* <h3 className="mt-3 lead text-muted">Hear from our happy players about their memorable moments and why they love the game.</h3> */}
         </header>
 
