@@ -34,8 +34,8 @@ const Home: NextPage = () =>
             <IntroSection />
             <FeatureOverviewSection />
             <CompanionAppSection />
-            <FeatureCardsSection />
             <CommunityCreatedSongsSection />
+            <FeatureCardsSection />
             <EasyToUseSection />
             <SongEditorSection />
             {/* <CrossPlatformSection /> */}

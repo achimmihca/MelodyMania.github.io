@@ -19,8 +19,8 @@ const NavigationSection = () =>
                         <ul className="dropdown-menu">
                             <li><a className="dropdown-item" href="#overview"><T i18nKey="navigationSection_features_overview" /></a></li>
                             <li><a className="dropdown-item" href="#companion-app">Companion App</a></li>
-                            <li><a className="dropdown-item" href="#features">Feature List</a></li>
                             <li><a className="dropdown-item" href="#community-created-songs"><T i18nKey="navigationSection_features_community" /></a></li>
+                            <li><a className="dropdown-item" href="#features">Feature List</a></li>
                             <li><a className="dropdown-item" href="#song-editor"><T i18nKey="navigationSection_features_songEditor" /></a></li>
                             {/* <li><a className="dropdown-item" href="#cross-platform"><T i18nKey="navigationSection_features_crossPlatform" /></a></li> */}
                             <li><a className="dropdown-item" href="#open-source"><T i18nKey="navigationSection_features_openSource" /></a></li>
