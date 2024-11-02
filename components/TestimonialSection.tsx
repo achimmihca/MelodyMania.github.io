@@ -58,7 +58,7 @@ const TestimonialSection = () =>
             <div className="card">
               <div className="card-body px-5 pt-5">
                 <p>
-                  What a fantastic game! It was so enjoyable that even my neighbor couldn't resist joining in and enthusiastically banging on my door to the rhythm of the music!                 </p>
+                  What a fantastic game! It was so enjoyable that even my neighbor couldn&apos;t resist joining in and enthusiastically banging on my door to the rhythm of the music!                 </p>
               </div>
               <div className="card-body mx-3">
                 <div className="d-flex align-items-center mx-1">
