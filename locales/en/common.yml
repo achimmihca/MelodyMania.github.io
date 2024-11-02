@@ -10,9 +10,15 @@ communityCreatedSongs_footer: Celebrate the music you love, whether you want to 
 communityCreatedSongs_games: Sing amazing game soundtracks
 communityCreatedSongs_regional: Sing dialect from your region
 communityCreatedSongs_searchHint: Search with Google for song title or artist
-communityCreatedSongs_subtitle: A big community already created thousands of songs in the UltraStar and MIDI format.
+communityCreatedSongs_subtitle: A big community already created thousands of songs in the UltraStar format.
 communityCreatedSongs_title: Sing your favorite songs!
 communityCreatedSongs_vocaloid: Sing your favorite Vocaloid and UTAU songs
+companionAppSection_feature_easySetup: "<strong>Easy Setup</strong>: Connects effortlessly as the app finds its game automatically from the same Wi-Fi."
+companionAppSection_feature_microphone: "<strong>Microphone</strong>: Use your smartphone as a high-quality microphone in the game."
+companionAppSection_feature_remoteControl: "<strong>Remote Control</strong>: Move freely while you stay in control of playback and volume."
+companionAppSection_feature_sonqQueue: "<strong>Song Queue</strong>: Browse and enqueue songs while others are still singing."
+companionAppSection_p: The free Companion&nbsp;App for Android and iOS makes singing a breeze for everyone.
+companionAppSection_title: Companion App
 cookieBanner_description: We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
 cookieBanner_title: We value your privacy
 crossPlatformSection_p_1: Melody&nbsp;Mania is a cross-platform application. Its initial release will be for Windows, followed by MacOS, Linux, Android, and iOS.<br /> Android TV and tvOS might be supported in the future as well.
@@ -42,11 +48,11 @@ featuresSection_featureCard_micPlayback_detail: Hear your own voice from the spe
 featuresSection_featureCard_micPlayback: Mic Playback
 featuresSection_featureCard_mics_detail: Connect your smartphone as mic. Use headsets or karaoke microphones from other games.
 featuresSection_featureCard_mics: Use Existing Microphones
-featuresSection_featureCard_modding_detail: Write custom code to alter and extend the game. Use community mods for a whole new game experience. For details click <a href="https://melodymania.org/how-to-mods">here</a>.
+featuresSection_featureCard_modding_detail: Write custom code to alter and extend the game. Use community mods for a whole new game experience. For details click <a href="/learn/mods">here</a>.
 featuresSection_featureCard_modding: Modding Support
 featuresSection_featureCard_onlineMultiplayer_detail: Connect with friends online, browse songs together, and see each other's performance when singing.
 featuresSection_featureCard_onlineMultiplayer: Online Multiplayer
-featuresSection_featureCard_openSongFormat_detail: Melody&nbsp;Mania supports the widespread and open UltraStar format, as well as the industry standard MIDI format.
+featuresSection_featureCard_openSongFormat_detail: Melody&nbsp;Mania supports the widespread and open UltraStar format.
 featuresSection_featureCard_openSongFormat: Open Song Formats
 featuresSection_featureCard_playerAndMicProfiles_detail: Configure each player and device individually. Quickly reassign microphones to players.
 featuresSection_featureCard_playerAndMicProfiles: Player & Mic Profiles
@@ -96,7 +102,7 @@ introSection_documentationAndHelpLinks: Join the growing community on {{discordL
 introSection_faqName: FAQ
 introSection_follow_prefix: Follow the project on
 introSection_p_1: Feel like a superstar, celebrate music, and enjoy unforgettable memories with family and friends when you rock the virtual stage together and break the high score!
-introSection_p_2: Melody&nbsp;Mania is a fun karaoke game that never gets old. Have a blast while you sing along your favorite songs for points. A variety of modes lets you play with others or compete against them. An open song format and AI powered editor tools provide boundless possibilites.
+introSection_p_2: Melody&nbsp;Mania is a fun karaoke game that never gets old. Have a blast while you sing along your favorite songs. A variety of modes lets you play with others or compete against them. An open song format and AI powered editor tools provide boundless possibilites.
 introSection_title: Enjoy a Fun Singing Party
 introSection_typewriterText_1: sing your favorite songs?
 introSection_typewriterText_2: challenge your friends?
@@ -115,18 +121,15 @@ navigationSection_features: Navigate
 navigationSection_home: Home
 navigationSection_newsletter: Newsletter
 navigationSection_pressKit: Press Kit
+navigationSection_testimonial: Testimonials
 newsletterSection_email_hint: Email address
 newsletterSection_submit: SUBSCRIBE NOW
 newsletterSection_subtitle: Don&apos;t miss any more updates.
 newsletterSection_title: Get the Newsletter!
-openSourceSection_beyondThisGame_p_1: Melody&nbsp;Mania has its <gradient>roots in the open source</gradient> project UltraStar Play and is still contributing to this ecosystem. By supporting Melody&nbsp;Mania, you support its hard working developers to <gradient>bring more sing-along fun to live</gradient>.
+openSourceSection_beyondThisGame_p_1: Melody&nbsp;Mania has its <gradient>roots in the open source</gradient> project <gradient>UltraStar Play</gradient> and is still contributing to this ecosystem. By supporting Melody&nbsp;Mania, you support its hard working developers to <gradient>bring more sing-along fun to live</gradient>.
 openSourceSection_beyondThisGame_title: Beyond Melody&nbsp;Mania
-openSourceSection_madeWithUnity_name: made with Unity
-openSourceSection_madeWithUnity_p_1: Melody&nbsp;Mania is built on a <gradient>professional game engine</gradient> and modern tools to provide the <gradient>best experience for developers and players</gradient>.
-openSourceSection_madeWithUnity_p_2: More than 50% of the world&apos;s video games are {{madeWithUnityLink}}. A <gradient>strong foundation</gradient> for Melody&nbsp;Mania that can grow with new tools and platforms.
-openSourceSection_madeWithUnity_title: Made with Unity
-openSourceSection_p_getInvolved: Make this <gradient>YOUR GAME</gradient> as well!<br /> Melody&nbsp;Mania was designed to be to be <gradient>customizable</gradient>, <gradient>extensible</gradient>, and <gradient>hackable</gradient>. You can not only add your own songs but also your own images, themes, and even code.
-openSourceSection_title: Customizable - Made with Unity
+openSourceSection_p_getInvolved: Make this <gradient>YOUR GAME</gradient> as well!<br /> Melody&nbsp;Mania was designed to be to be <gradient>customizable</gradient>, <gradient>extensible</gradient>, and <gradient>hackable</gradient>. You can not only add your own songs but also your own images, themes, and even code. <a href="/learn/steam-workshop">Learn more</a>.
+openSourceSection_title: Customizable - Loving Open Source
 openSourceSection_whyOpenSource_p_1: Imagine that you would buy another singing game for your current console, only to find that the vendor shuts down the online features, or you lose your song collection when changing the device.
 openSourceSection_whyOpenSource_p_2: This won&apos;t happen with Melody&nbsp;Mania because it can <gradient>evolve with the future</gradient> as long as it has a contributing community behind it.
 openSourceSection_whyOpenSource_title: Why an open song format?
@@ -150,4 +153,5 @@ songEditorSection_p_1: Create and edit songs as you please. The <gradient>AI POW
 songEditorSection_p_2: Melody&nbsp;Mania&apos;s song editor combines features that previously required multiple tools.<br /> Plus, you can quickly <gradient>switch between editing and testing</gradient> your song.
 songEditorSection_subtitle: Create your own songs
 songEditorSection_title: Have a weird taste in music? <gradient>No&nbsp;problem!</gradient>
+testimonialSection_title: Real Reviews, Real Fun
 youTubeVideo_mustAcceptCookieHint: Accept all cookies to watch YouTube video.
