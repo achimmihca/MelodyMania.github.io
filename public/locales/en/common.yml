@@ -10,7 +10,7 @@ communityCreatedSongs_footer: Celebrate the music you love, whether you want to 
 communityCreatedSongs_games: Sing amazing game soundtracks
 communityCreatedSongs_regional: Sing dialect from your region
 communityCreatedSongs_searchHint: Search with Google for song title or artist
-communityCreatedSongs_subtitle: A big community already created thousands of songs in the UltraStar and MIDI format.
+communityCreatedSongs_subtitle: A big community already created thousands of songs in the UltraStar format.
 communityCreatedSongs_title: Sing your favorite songs!
 communityCreatedSongs_vocaloid: Sing your favorite Vocaloid and UTAU songs
 cookieBanner_description: We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
@@ -46,7 +46,7 @@ featuresSection_featureCard_modding_detail: Write custom code to alter and exten
 featuresSection_featureCard_modding: Modding Support
 featuresSection_featureCard_onlineMultiplayer_detail: Connect with friends online, browse songs together, and see each other's performance when singing.
 featuresSection_featureCard_onlineMultiplayer: Online Multiplayer
-featuresSection_featureCard_openSongFormat_detail: Melody&nbsp;Mania supports the widespread and open UltraStar format, as well as the industry standard MIDI format.
+featuresSection_featureCard_openSongFormat_detail: Melody&nbsp;Mania supports the widespread and open UltraStar format.
 featuresSection_featureCard_openSongFormat: Open Song Formats
 featuresSection_featureCard_playerAndMicProfiles_detail: Configure each player and device individually. Quickly reassign microphones to players.
 featuresSection_featureCard_playerAndMicProfiles: Player & Mic Profiles
@@ -119,12 +119,8 @@ newsletterSection_email_hint: Email address
 newsletterSection_submit: SUBSCRIBE NOW
 newsletterSection_subtitle: Don&apos;t miss any more updates.
 newsletterSection_title: Get the Newsletter!
-openSourceSection_beyondThisGame_p_1: Melody&nbsp;Mania has its <gradient>roots in the open source</gradient> project UltraStar Play and is still contributing to this ecosystem. By supporting Melody&nbsp;Mania, you support its hard working developers to <gradient>bring more sing-along fun to live</gradient>.
+openSourceSection_beyondThisGame_p_1: Melody&nbsp;Mania has its <gradient>roots in the open source</gradient> project <gradient>UltraStar Play</gradient> and is still contributing to this ecosystem. By supporting Melody&nbsp;Mania, you support its hard working developers to <gradient>bring more sing-along fun to live</gradient>.
 openSourceSection_beyondThisGame_title: Beyond Melody&nbsp;Mania
-openSourceSection_madeWithUnity_name: made with Unity
-openSourceSection_madeWithUnity_p_1: Melody&nbsp;Mania is built on a <gradient>professional game engine</gradient> and modern tools to provide the <gradient>best experience for developers and players</gradient>.
-openSourceSection_madeWithUnity_p_2: More than 50% of the world&apos;s video games are {{madeWithUnityLink}}. A <gradient>strong foundation</gradient> for Melody&nbsp;Mania that can grow with new tools and platforms.
-openSourceSection_madeWithUnity_title: Made with Unity
 openSourceSection_p_getInvolved: Make this <gradient>YOUR GAME</gradient> as well!<br /> Melody&nbsp;Mania was designed to be to be <gradient>customizable</gradient>, <gradient>extensible</gradient>, and <gradient>hackable</gradient>. You can not only add your own songs but also your own images, themes, and even code.
 openSourceSection_title: Customizable - Loving Open Source
 openSourceSection_whyOpenSource_p_1: Imagine that you would buy another singing game for your current console, only to find that the vendor shuts down the online features, or you lose your song collection when changing the device.
