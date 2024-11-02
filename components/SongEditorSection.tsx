@@ -14,8 +14,8 @@ const SongEditorSection = () =>
     useEffect(() => 
     {
         setInnerHtml('songEditorSection_furtherDocumentation', t("songEditorSection_furtherDocumentation", {
-            "videoLink": `<a href='/how-to-song-editor'>${videoName}</a>`,
-            "documentationLink": `<a href='/how-to-song-editor'>${documentationName}</a>`,
+            "videoLink": `<a href='/learn/song-editor'>${videoName}</a>`,
+            "documentationLink": `<a href='/learn/song-editor'>${documentationName}</a>`,
         }))
     })
 
