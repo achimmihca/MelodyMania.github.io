@@ -21,34 +21,42 @@ import ComingSoonSection from '../../components/ComingSoonSection'
 import FeatureCardsSection from '../../components/FeatureCardsSection'
 import CompanionAppSection from '../../components/CompanionAppSection'
 import TestimonialSection from '../../components/TestimonialSection'
+import Head from 'next/head'
+import { useTranslationUnescaped } from '../../lib/utils'
 const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
 
 // Main page
 const Home: NextPage = () =>
 {
-    return (
+  const { t } = useTranslationUnescaped("common")
 
-        <>
-            <NavigationSection />
-            <IntroSection />
-            <FeatureOverviewSection />
-            <CompanionAppSection />
-            <CommunityCreatedSongsSection />
-            <FeatureCardsSection />
-            <EasyToUseSection />
-            <SongEditorSection />
-            {/* <CrossPlatformSection /> */}
-            <OpenSourceSection />
-            {/* <PlannedFeaturesSection /> */}
-            <TestimonialSection />
-            <NewsletterSection />
-            {/* <DownloadCallToActionSection /> */}
-            <FooterSection />
-            <CookieBanner />
-        </>
+  return (
+    <>
+      <Head>
+        <title>{ t("website_title") }</title>
+        <meta name="description" content={ t("website_description") } />
+      </Head>
+      
+      <NavigationSection />
+      <IntroSection />
+      <FeatureOverviewSection />
+      <CompanionAppSection />
+      <CommunityCreatedSongsSection />
+      <FeatureCardsSection />
+      <EasyToUseSection />
+      <SongEditorSection />
+      {/* <CrossPlatformSection /> */}
+      <OpenSourceSection />
+      {/* <PlannedFeaturesSection /> */}
+      <TestimonialSection />
+      <NewsletterSection />
+      {/* <DownloadCallToActionSection /> */}
+      <FooterSection />
+      <CookieBanner />
+    </>
 
-    )
+  )
 }
 
 export default Home
