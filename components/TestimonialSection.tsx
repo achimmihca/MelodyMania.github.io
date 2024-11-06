@@ -11,7 +11,7 @@ const TestimonialSection = () =>
       <div className="container">
         <header className="text-center mb-1">
           <span className="bi bi-chat-quote display-3" />
-          <h1 className="mt-4 font-weight-bold"><T i18nKey="testimonialSection_title"/></h1>
+          <h1 className="mt-4 font-weight-bold"><T i18nKey="testimonialSection_title" /></h1>
           {/* <h3 className="mt-3 lead text-muted">Hear from our happy players about their memorable moments and why they love the game.</h3> */}
         </header>
 
@@ -58,14 +58,15 @@ const TestimonialSection = () =>
             <div className="card">
               <div className="card-body px-5 pt-5">
                 <p>
-                  What a fantastic game! It was so enjoyable that even my neighbor couldn&apos;t resist joining in and enthusiastically banging on my door to the rhythm of the music!                 </p>
+                  Our Family and friend are having such a blast with this game and it's really more stable than all the other programs I tried. [...] Really great work and fun game.
+                </p>
               </div>
               <div className="card-body mx-3">
                 <div className="d-flex align-items-center mx-1">
-                  <span className="bi bi-steam display-6" />
+                  <span className="bi bi-discord display-6" />
                   <div className="p-2">
-                    <h4 className="mb-0">Warcon</h4>
-                    <span className="text-muted">04.07.2023</span>
+                    <h4 className="mb-0">Schninsche</h4>
+                    <span className="text-muted">04.11.2024</span>
                   </div>
                 </div>
               </div>
