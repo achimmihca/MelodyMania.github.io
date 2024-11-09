@@ -58,7 +58,7 @@ const TestimonialSection = () =>
             <div className="card">
               <div className="card-body px-5 pt-5">
                 <p>
-                  Our Family and friend are having such a blast with this game and it's really more stable than all the other programs I tried. [...] Really great work and fun game.
+                  Our Family and friend are having such a blast with this game and it&apos;s really more stable than all the other programs I tried. [...] Really great work and fun game.
                 </p>
               </div>
               <div className="card-body mx-3">
