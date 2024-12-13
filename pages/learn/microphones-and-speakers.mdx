@@ -42,6 +42,15 @@ Configure the noise suppression if your microphone is mistaken ambient noise for
 
 This option will ignore input below the configured threshold volume.
 
+### System audio backend delay
+Option to counter latency that is equal for every microphone.
+
+This is similar to a "global microhpone delay" that is applied to every device,
+in addition to the regular delay.
+
+For example, if the speakers have some latency that is the same for every microphone
+then this option can be used to adjust the delay accordingly.
+
 ### Multi-Channel and Low-Latency Mode
 By default, the game assumes microphones with a single channel.
 To use different channels of a microphone (e.g. left / right), you have to enable the multi-channel and low-latency mode.
