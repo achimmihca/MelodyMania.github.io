@@ -298,11 +298,17 @@ function getStorePageJsonFileName(targetLanguage: string) {
 }
 
 async function translateStorePageJsonField(sourceText: string, targetLanguage: string) {
-    const translatedTexts = await translateTexts([sourceText], targetLanguage);
+    // Escape Store page markup syntax with XML markup syntax to preserve it.
+    const sourceTextEscaped = sourceText.replaceAll('[', "<").replaceAll(']','>')
+    
+    const translatedTexts = await translateTexts([sourceTextEscaped], targetLanguage);
     const translatedText = translatedTexts[0]
         // DeepL seems to add an additional space before the exclamation mark
         .replaceAll(' !', '!');
-    return translatedText;
+    
+    // Restore original markup
+    const translatedTextUnescaped = translatedText.replaceAll('<', "[").replaceAll('>',']')
+    return translatedTextUnescaped;
 }
 
 async function translateStorePageJson(targetLanguage: string) {
