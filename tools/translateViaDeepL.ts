@@ -1,9 +1,57 @@
-// run the script via tsx (`tsx <filename.ts>`)
+// run the script via `tsx <filename.ts>`
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
 
 const DEEPL_AUTH_KEY = process.env.DEEPL_AUTH_KEY;
+
+const englishTranslationFile = '../public/locales/en/common.yml';
+const targetLanguages = [
+        // Ordered by total number of speakers ( https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers )
+        // 1. English, skipped because default
+        // 2. Chinese (Simplified)
+        "zh",
+        // 3. Hindi (India), skipped because not supported by DeepL
+        // 4. Spanish (Spain)
+        "es",
+        // 5. French (France)
+        "fr",
+        // 6. Arabic, skipped because Right to Left text not supported by Unity ( https://forum.unity.com/threads/right-to-left-and-arabic-support-for-labels.1311900/ )
+        // 7. Bengali (Bangladesh), skipped because not supported by DeepL
+        // 8. Portuguese (Portugal)
+        "pt",
+        // 9. Russian (Russia)
+        "ru",
+
+        // 12. German (Germany)
+        "de",
+        // 13. Japanese (Japan)
+        "ja",
+
+        // 24. Korean (Korea), because has karaoke culture
+        "ko",
+
+        // 29. Italian (Italy), because had an UltraStar community
+        "it",
+        // Polish (Poland), because of user contribution on GitHub
+        "pl",
+];
+
+const languageAbbreviationToNameMap = {
+    "en": "english",
+    "zh": "chinese",
+    "es": "spanish",
+    "fr": "french",
+    "pt": "portuguese",
+    "ru": "russian",
+    "de": "german",
+    "ja": "japanese",
+    "ko": "korean",
+    "it": "italian",
+    "pl": "polish",
+};
+
+const languagesWithoutFormality = [ "zh", "ar", "ko" ];
 
 type Translation = {
   text: string;
@@ -82,6 +130,10 @@ async function sendTranslationRequest(texts: string[], targetLang: string): Prom
         throw new Error('Translation failed. Response data: ' + JSON.stringify(data));
     }
 }
+
+///////////////////////////////////////////////////////////////////
+// YAML File Translation
+///////////////////////////////////////////////////////////////////
 
 async function translateYmlObject(sourceObj: YmlObject, targetObj: YmlObject, targetLang: string): Promise<YmlObject> {
   const missingTranslations: TranslationItem[] = [];
@@ -229,40 +281,73 @@ function toYmlString(data: YmlObject): string {
 });
 }
 
-// Do the translation
-const englishTranslationFile = '../public/locales/en/common.yml';
-const targetLanguages = [
-        // Ordered by total number of speakers ( https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers )
-        // 1. English, skipped because default
-        // 2. Chinese (Simplified)
-        "zh",
-        // 3. Hindi (India), skipped because not supported by DeepL
-        // 4. Spanish (Spain)
-        "es",
-        // 5. French (France)
-        "fr",
-        // 6. Arabic, skipped because Right to Left text not supported by Unity ( https://forum.unity.com/threads/right-to-left-and-arabic-support-for-labels.1311900/ )
-        // 7. Bengali (Bangladesh), skipped because not supported by DeepL
-        // 8. Portuguese (Portugal)
-        "pt",
-        // 9. Russian (Russia)
-        "ru",
-
-        // 12. German (Germany)
-        "de",
-        // 13. Japanese (Japan)
-        "ja",
-
-        // 24. Korean (Korea), because has karaoke culture
-        "ko",
-
-        // 29. Italian (Italy), because had an UltraStar community
-        "it",
-        // Polish (Poland), because of user contribution on GitHub
-        "pl",
-];
-const languagesWithoutFormality = [ "zh", "ar", "ko" ];
-
-for (const targetLang of targetLanguages) {
-  translateYamlFile(englishTranslationFile, `../public/locales/${targetLang}/common.yml`, targetLang);
+function translateAllYamlFiles() {    
+    for (const targetLang of targetLanguages) {
+        translateYamlFile(englishTranslationFile, `../public/locales/${targetLang}/common.yml`, targetLang);
+    }
 }
+
+///////////////////////////////////////////////////////////////////
+// Steam Store Page Translation
+///////////////////////////////////////////////////////////////////
+
+function getStorePageJsonFileName(targetLanguage: string) {
+    // @ts-ignore
+    const targetLanguageFullName = languageAbbreviationToNameMap[targetLanguage]
+    return `storepage_557217_${targetLanguageFullName}.json`
+}
+
+async function translateStorePageJsonField(sourceText: string, targetLanguage: string) {
+    const translatedTexts = await translateTexts([sourceText], targetLanguage);
+    const translatedText = translatedTexts[0]
+        // DeepL seems to add an additional space before the exclamation mark
+        .replaceAll(' !', '!');
+    return translatedText;
+}
+
+async function translateStorePageJson(targetLanguage: string) {
+    console.log(`translating Steam store page description from 'en' to '${targetLanguage}'`)
+
+    const targetLanguageFullName = languageAbbreviationToNameMap['en']
+    const inputPath = `storePageTranslations/${getStorePageJsonFileName('en')}`;
+    const outputPath = `storePageTranslations/${getStorePageJsonFileName(targetLanguage)}`;
+    const sourceJsonContent = fs.readFileSync(inputPath, 'utf8');
+    const sourceJsonObj = JSON.parse(sourceJsonContent);
+
+    const sourceAboutText = sourceJsonObj["app[content][about]"];
+    const translatedAboutText = await translateStorePageJsonField(sourceAboutText, targetLanguage);
+
+    const sourceShortDescriptionText = sourceJsonObj["app[content][short_description]"];
+    const translatedShortDescriptionText = await translateStorePageJsonField(sourceShortDescriptionText, targetLanguage);
+
+    const outputJsonObj = {
+        language: targetLanguageFullName,
+        itemid:"557217",
+        "app[content][about]": translatedAboutText,
+        "app[content][short_description]": translatedShortDescriptionText,
+    }
+    const outputJsonContent = JSON.stringify(outputJsonObj, null, 4);
+
+    const outputFolder = path.dirname(outputPath);
+    if (!fs.existsSync(outputFolder)) {
+        console.log(`creating folder: ${outputFolder}`)
+        fs.mkdirSync(outputFolder, { recursive: true });
+    }
+
+    console.log(`writing file: ${outputPath}`)
+    await fs.writeFileSync(outputPath, outputJsonContent, 'utf8');
+}
+
+function translateAllStorePageJson() {
+    for (const targetLang of targetLanguages) {
+        translateStorePageJson(targetLang);
+    }
+}
+
+///////////////////////////////////////////////////////////////////
+// Run script
+///////////////////////////////////////////////////////////////////
+
+// translateAllYamlFiles();
+
+translateAllStorePageJson();
