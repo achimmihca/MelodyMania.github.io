@@ -37,9 +37,39 @@ const targetLanguages = [
         "pl",
 ];
 
-const languageAbbreviationToNameMap = {
+const storePageTargetLanguages = [
+    // Same languages as for the website and game
+    "zh",
+    "es",
+    "fr",
+    "pt",
+    "ru",
+    "de",
+    "ja",
+    "ko",
+    "it",
+    "pl",
+    
+    // Additional languages for the Steam store page
+    "cs", // Czech
+    "da", // Danish
+    "el", // Greek
+    "es-419", // Spanish (Latin America)
+    "fi", // Finnish
+    "nl", // Dutch
+    "no", // Norwegian
+    "pt-BR", // Brazilian Portuguese
+    "sv", // Swedish
+    "th", // Thai
+    "tr", // Turkish
+    "uk", // Ukrainian
+];
+
+const targetLanguageToStorePageName = {
     "en": "english",
-    "zh": "chinese",
+
+    // Same languages as for the website and game
+    "zh": "schinese", // Chinese (Simplified)
     "es": "spanish",
     "fr": "french",
     "pt": "portuguese",
@@ -49,9 +79,23 @@ const languageAbbreviationToNameMap = {
     "ko": "korean",
     "it": "italian",
     "pl": "polish",
+
+    // Additional languages for the Steam store page    
+    "cs": "czech",
+    "da": "danish",
+    "el": "Greek",
+    "es-419": "latam",
+    "fi": "finnish",
+    "nl": "dutch",
+    "no": "norwegian",
+    "pt-BR": "brazilian",
+    "sv": "swedish",
+    "th": "thai",
+    "tr": "turkish",
+    "uk": "ukrainian",
 };
 
-const languagesWithoutFormality = [ "zh", "ar", "ko" ];
+const languagesWithoutFormality = [ "zh", "ar", "ko", "cs", "el", "tr", "da" ];
 
 type Translation = {
   text: string;
@@ -127,7 +171,7 @@ async function sendTranslationRequest(texts: string[], targetLang: string): Prom
     if (data.translations && data.translations.length === texts.length) {
         return data.translations.map(translation => translation.text);
     } else {
-        throw new Error('Translation failed. Response data: ' + JSON.stringify(data));
+        throw new Error(`Translation failed: targetLanguage '${targetLang}', response '${JSON.stringify(data)}'`);
     }
 }
 
@@ -293,15 +337,25 @@ function translateAllYamlFiles() {
 
 function getStorePageJsonFileName(targetLanguage: string) {
     // @ts-ignore
-    const targetLanguageFullName = languageAbbreviationToNameMap[targetLanguage]
+    const targetLanguageFullName = getLanguageFullName(targetLanguage)
     return `storepage_557217_${targetLanguageFullName}.json`
+}
+
+function getLanguageFullName(languageAbbreviation: string) {
+    // @ts-ignore
+    return targetLanguageToStorePageName[languageAbbreviation]
 }
 
 async function translateStorePageJsonField(sourceText: string, targetLanguage: string) {
     // Escape Store page markup syntax with XML markup syntax to preserve it.
     const sourceTextEscaped = sourceText.replaceAll('[', "<").replaceAll(']','>')
     
-    const translatedTexts = await translateTexts([sourceTextEscaped], targetLanguage);
+    // Normalize language code for DeepL. For example, there is no specific language code for latin-american spanish.
+    const deeplTargetLanguage = targetLanguage === 'es-419'
+        ? 'es'
+        : targetLanguage;
+
+    const translatedTexts = await translateTexts([sourceTextEscaped], deeplTargetLanguage);
     const translatedText = translatedTexts[0]
         // DeepL seems to add an additional space before the exclamation mark
         .replaceAll(' !', '!');
@@ -312,11 +366,14 @@ async function translateStorePageJsonField(sourceText: string, targetLanguage: s
 }
 
 async function translateStorePageJson(targetLanguage: string) {
+    if (targetLanguage === 'en') {
+        throw new Error('Cannot translate to English because it is the source language');
+    }
+
     console.log(`translating Steam store page description from 'en' to '${targetLanguage}'`)
 
-    const targetLanguageFullName = languageAbbreviationToNameMap['en']
+    const targetLanguageFullName = getLanguageFullName(targetLanguage)
     const inputPath = `storePageTranslations/${getStorePageJsonFileName('en')}`;
-    const outputPath = `storePageTranslations/${getStorePageJsonFileName(targetLanguage)}`;
     const sourceJsonContent = fs.readFileSync(inputPath, 'utf8');
     const sourceJsonObj = JSON.parse(sourceJsonContent);
 
@@ -334,6 +391,13 @@ async function translateStorePageJson(targetLanguage: string) {
     }
     const outputJsonContent = JSON.stringify(outputJsonObj, null, 4);
 
+    writeStorePageJson(targetLanguage, outputJsonContent);
+}
+
+function writeStorePageJson(targetLanguage: string, outputJsonContent: string)
+{
+    const outputPath = `storePageTranslations/${getStorePageJsonFileName(targetLanguage)}`;
+
     const outputFolder = path.dirname(outputPath);
     if (!fs.existsSync(outputFolder)) {
         console.log(`creating folder: ${outputFolder}`)
@@ -341,11 +405,11 @@ async function translateStorePageJson(targetLanguage: string) {
     }
 
     console.log(`writing file: ${outputPath}`)
-    await fs.writeFileSync(outputPath, outputJsonContent, 'utf8');
+    fs.writeFileSync(outputPath, outputJsonContent, 'utf8');
 }
 
 function translateAllStorePageJson() {
-    for (const targetLang of targetLanguages) {
+    for (const targetLang of storePageTargetLanguages) {
         translateStorePageJson(targetLang);
     }
 }
@@ -354,6 +418,8 @@ function translateAllStorePageJson() {
 // Run script
 ///////////////////////////////////////////////////////////////////
 
+// translateYamlFile(englishTranslationFile, `../public/locales/fr/common.yml`, 'fr');
 // translateAllYamlFiles();
 
+// translateStorePageJson('de')
 translateAllStorePageJson();
