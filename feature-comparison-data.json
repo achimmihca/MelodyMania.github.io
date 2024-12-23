@@ -45,54 +45,69 @@
             "usplay": true
         },
         {
-            "name": "Microphones with multiple channels",
-            "mm": true,
-            "usplay": false
-        },
-        {
             "name": "Select microphone by singing",
             "mm": true,
-            "usplay": false
+            "usplay": true
         },
         {
-            "name": "Play back mic input",
+            "name": "Playback of microphone input",
             "mm": true,
-            "usplay": false
-        },
-        {
-            "name": "Many audio and video file formats",
-            "mm": true,
-            "usplay": false
-        },
-        {
-            "name": "Embedded browser (YouTube etc.)",
-            "mm": true,
-            "usplay": false
+            "usplay": true
         },
         {
             "name": "Team & Tournament",
             "mm": true,
-            "usplay": false
+            "usplay": true
         },
         {
             "name": "Song Queue",
             "mm": true,
-            "usplay": false
+            "usplay": true
         },
         {
             "name": "Medleys",
             "mm": true,
-            "usplay": false
+            "usplay": true
         },
         {
-            "name": "Visual Goodies from Unity Asset Store",
+            "name": "Modding",
             "mm": true,
-            "usplay": false
+            "usplay": true
         },
         {
             "name": "MIDI support",
             "mm": true,
-            "usplay": false
+            "usplay": true
+        },
+        {
+            "name": "Playlists and Favorites",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Song editor - import MIDI files",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Song editor - import LRC lyrics",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "REST API to control the game",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Companion App - song queue",
+            "mm": true,
+            "usplay": true
+        },
+        {
+            "name": "Companion App - remote control",
+            "mm": true,
+            "usplay": true
         },
         {
             "name": "Vocals isolation (AI)",
@@ -110,27 +125,32 @@
             "usplay": false
         },
         {
-            "name": "Song editor - import MIDI files",
-            "mm": "full",
-            "usplay": "partial"
-        },
-        {
-            "name": "Song editor - import LRC lyrics",
+            "name": "Visual Goodies from Unity Asset Store",
             "mm": true,
             "usplay": false
         },
         {
-            "name": "Companion app - song queue",
+            "name": "Many audio and video file formats",
             "mm": true,
             "usplay": false
         },
         {
-            "name": "Companion app - remote control",
+            "name": "Embedded browser (YouTube etc.)",
             "mm": true,
             "usplay": false
         },
         {
-            "name": "REST API to control the game",
+            "name": "Microphones with multiple channels",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Steam Workshop integration",
+            "mm": true,
+            "usplay": false
+        },
+        {
+            "name": "Online Multiplayer via Steam",
             "mm": true,
             "usplay": false
         }
