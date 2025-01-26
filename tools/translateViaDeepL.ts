@@ -57,10 +57,10 @@ const storePageTargetLanguages = [
     "es-419", // Spanish (Latin America)
     "fi", // Finnish
     "nl", // Dutch
-    "no", // Norwegian
+    // "no", // Norwegian, not supported by DeepL
     "pt-BR", // Brazilian Portuguese
     "sv", // Swedish
-    "th", // Thai
+    // "th", // Thai, not supported by DeepL
     "tr", // Turkish
     "uk", // Ukrainian
 ];
@@ -87,15 +87,15 @@ const targetLanguageToStorePageName = {
     "es-419": "latam",
     "fi": "finnish",
     "nl": "dutch",
-    "no": "norwegian",
+    // "no": "norwegian", // not supported by DeepL
     "pt-BR": "brazilian",
     "sv": "swedish",
-    "th": "thai",
+    // "th": "thai", // not supported by DeepL
     "tr": "turkish",
     "uk": "ukrainian",
 };
 
-const languagesWithoutFormality = [ "zh", "ar", "ko", "cs", "el", "tr", "da" ];
+const languagesWithoutFormality = [ "zh", "ar", "ko", "cs", "el", "tr", "da", "uk", "fi", "sv" ];
 
 type Translation = {
   text: string;
@@ -408,9 +408,9 @@ function writeStorePageJson(targetLanguage: string, outputJsonContent: string)
     fs.writeFileSync(outputPath, outputJsonContent, 'utf8');
 }
 
-function translateAllStorePageJson() {
+async function translateAllStorePageJson() {
     for (const targetLang of storePageTargetLanguages) {
-        translateStorePageJson(targetLang);
+        await translateStorePageJson(targetLang);
     }
 }
 
