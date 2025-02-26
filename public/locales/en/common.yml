@@ -78,6 +78,8 @@ featuresSection_featureCard_vocalsSeparation_detail: Split your mp3 or ogg files
 featuresSection_featureCard_vocalsSeparation: Vocals Isolation
 featuresSection_featureCard_webcam_detail: Singing is even more fun when you can see yourself! Use your camera as background or take a snapshot for your profile image
 featuresSection_featureCard_webcam: Webcam
+featuresSection_featureCard_asio: ASIO Compatible
+featuresSection_featureCard_asio_detail: Use professional grade audio input on Windows with lower latency. ASIO is a registered trademark of Steinberg Media Technologies GmbH.
 featuresSection_featureList_companionApp: Companion App as mic
 featuresSection_featureList_customSongs: Custom songs and song editor
 featuresSection_featureList_deviceSupport: Controller and webcam support
