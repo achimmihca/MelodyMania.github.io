@@ -83,7 +83,7 @@ const targetLanguageToStorePageName = {
     // Additional languages for the Steam store page    
     "cs": "czech",
     "da": "danish",
-    "el": "Greek",
+    "el": "greek",
     "es-419": "latam",
     "fi": "finnish",
     "nl": "dutch",
@@ -421,5 +421,5 @@ async function translateAllStorePageJson() {
 // translateYamlFile(englishTranslationFile, `../public/locales/fr/common.yml`, 'fr');
 // translateAllYamlFiles();
 
-// translateStorePageJson('de')
+// translateStorePageJson('el')
 translateAllStorePageJson();
