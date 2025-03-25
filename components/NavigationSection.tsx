@@ -26,7 +26,7 @@ const NavigationSection = () =>
                             <li><a className="dropdown-item" href="#open-source"><T i18nKey="navigationSection_features_openSource" /></a></li>
                             {/* <li><a className="dropdown-item" href="#planned-features"><T i18nKey="navigationSection_features_plannedFeatures" /></a></li> */}
                             <li><a className="dropdown-item" href="#testimonial"><T i18nKey="navigationSection_testimonial" /></a></li>
-                            <li><a className="dropdown-item" href="#newsletter"><T i18nKey="navigationSection_newsletter" /></a></li>
+                            {/* <li><a className="dropdown-item" href="#newsletter"><T i18nKey="navigationSection_newsletter" /></a></li> */}
                         </ul>
                     </li>
                     {/* <li className="nav-item"><a className="nav-link" href="#download"><T i18nKey="navigationSection_download" /></a></li> */}

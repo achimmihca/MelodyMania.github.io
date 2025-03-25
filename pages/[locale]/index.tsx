@@ -50,7 +50,7 @@ const Home: NextPage = () =>
       <OpenSourceSection />
       {/* <PlannedFeaturesSection /> */}
       <TestimonialSection />
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
       {/* <DownloadCallToActionSection /> */}
       <FooterSection />
       <CookieBanner />
