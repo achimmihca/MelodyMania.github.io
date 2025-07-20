@@ -32,7 +32,7 @@ const NavigationSection = () =>
                     {/* <li className="nav-item"><a className="nav-link" href="#download"><T i18nKey="navigationSection_download" /></a></li> */}
                     {/* <li className="nav-item"><a className="nav-link" href="https://github.com/UltraStar-Deluxe/Play/wiki/Frequently-Asked-Questions-(FAQ)"><T i18nKey="navigationSection_faq" /></a></li> */}
                     <li className="nav-item dropdown"><LanguageSwitcher /></li>
-                    <li className="nav-item"><RedirectLink className="nav-link me-lg-3" href="https://drive.google.com/drive/folders/16iC2IsYZ-qgkYDddIVZWPsuU_dz6skMp"><T i18nKey="navigationSection_pressKit" /></RedirectLink></li>
+                    <li className="nav-item"><RedirectLink className="nav-link me-lg-3" href="https://drive.google.com/drive/folders/10bb9wX0Zx3kQ1hE11dwn61l0yOc4z-gm"><T i18nKey="navigationSection_pressKit" /></RedirectLink></li>
                 </ul>
             </div>
         </div>
