@@ -7,13 +7,12 @@ import MdxLayoutComponent from '../../components/MdxLayoutComponent'
 ## Custom Player Profile Images
 - You can add custom player profile images (PNG or JPG files).
     - TIP: Browse player profile images and other user-generated content on [Steam Workshop](/learn/steam-workshop).
-- You can add a profile image using a webcam or integrated camera of your device.
+- You can create a profile image using a webcam or integrated camera of your device.
     - Therefor, select the the very last profile image in the list and take a snapshot.
-- Player profile images are searched in specific folders:
-    - `<mod-folder>/PlayerProfileImages`
+- You can place existing images in one of these locations to make them available in the game. A restart of the game may be required afterwards.
     - `<data-folder>/PlayerProfileImages`
-    - `<installation-path>/Melody Mania_Data/StreamingAssets/PlayerProfileImages`
-- To install a player profile image, copy it to one of these locations. A restart of the game may be required afterwards.
+        - TIP: You can open the data folder from the development options.
+    - `<mod-folder>/PlayerProfileImages`
 
 export default ({ children }) => (
     <MdxLayoutComponent>{children}</MdxLayoutComponent>
