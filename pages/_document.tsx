@@ -16,8 +16,8 @@ class MyDocument extends Document
           <link rel="icon" type="image/x-icon" href="favicon.ico" />
           
           {/* Thinkstack Custom AI Chat Bot */}
-          <script
-            chatbot_id="693307a354cc835c79daae79"
+          {/* @ts-ignore */}
+          <script async chatbot_id="693307a354cc835c79daae79"
             data-type="bar"
             src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"
           ></script>
