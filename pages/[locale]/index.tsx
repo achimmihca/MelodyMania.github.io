@@ -23,6 +23,8 @@ import CompanionAppSection from '../../components/CompanionAppSection'
 import TestimonialSection from '../../components/TestimonialSection'
 import Head from 'next/head'
 import { useTranslationUnescaped } from '../../lib/utils'
+import ThinkstackChat from '../../components/ThinkstackChat'
+import Script from 'next/script'
 const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
 
@@ -38,6 +40,8 @@ const Home: NextPage = () =>
         <meta name="description" content={ t("website_description") } />
       </Head>
       
+      <ThinkstackChat />
+
       <NavigationSection />
       <IntroSection />
       <FeatureOverviewSection />

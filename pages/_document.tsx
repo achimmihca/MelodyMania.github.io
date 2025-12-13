@@ -14,14 +14,6 @@ class MyDocument extends Document
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta name="author" content="" />
           <link rel="icon" type="image/x-icon" href="favicon.ico" />
-          
-          {/* Thinkstack Custom AI Chat Bot */}
-          {/* @ts-ignore */}
-          <script defer chatbot_id="693307a354cc835c79daae79"
-            data-type="bar"
-            src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"
-          ></script>
-
         </Head>
         <body id="page-top" >
           <Main />
