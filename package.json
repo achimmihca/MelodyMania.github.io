@@ -20,6 +20,7 @@
     "@types/uuid": "10.0.0",
     "bootstrap": "5.3.3",
     "bootstrap-icons": "1.11.3",
+    "bowser": "2.13.1",
     "he": "1.2.0",
     "next": "14.2.4",
     "next-i18next": "15.3.0",
