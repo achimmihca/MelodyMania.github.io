@@ -14,7 +14,7 @@ gradient {
 
 .cookie-notice-container {
     position: fixed;
-    bottom: 0px;
+    bottom: 50px; /* Place above AI Chat */
     right: 0px;
     width: 500px;
     max-width: 100%;
