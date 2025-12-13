@@ -17,7 +17,7 @@ class MyDocument extends Document
           
           {/* Thinkstack Custom AI Chat Bot */}
           {/* @ts-ignore */}
-          <script async chatbot_id="693307a354cc835c79daae79"
+          <script defer chatbot_id="693307a354cc835c79daae79"
             data-type="bar"
             src="https://app.thinkstack.ai/bot/thinkstackai-loader.min.js"
           ></script>
