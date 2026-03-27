@@ -5,7 +5,7 @@ import { T } from './T';
 const BackToHomeNavigationSection = (props: {title: string}) =>
 {
     return <>
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav"
+    <nav className="navbar navbar-expand-lg navbar-light sticky-top shadow-sm" id="mainNav"
         style={{paddingTop: "0.5rem", paddingBottom: "0.5rem"}}>
         <div className="container px-5">
             <a className="navbar-brand fw-bold" href="#page-top">{props.title}</a>

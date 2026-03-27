@@ -1,0 +1,44 @@
+﻿/* Kickstarter Notification */
+.kickstarter-notification-container {
+    background-color: #05ce78; /* Kickstarter Green */
+    color: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.kickstarter-notification-container.visible {
+    max-height: 500px; /* Large enough value to allow full content */
+}
+
+.kickstarter-notification-container .btn-close {
+    padding: 0.5rem;
+}
+
+.kickstarter-notification-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.kickstarter-notification-link:hover {
+    color: #f8f9fa;
+    background-color: #04b368;
+}
+
+.kickstarter-text {
+    font-size: 1.1rem;
+}
+
+.kickstarter-logo-wrapper {
+    display: flex;
+    align-items: center;
+    filter: brightness(0) invert(1); /* Make the logo white to match text */
+}
+
+@media (max-width: 991.98px) {
+    .kickstarter-text {
+        font-size: 0.9rem;
+    }
+}
