@@ -5,7 +5,7 @@ import { T } from './T';
 const NavigationSection = () =>
 {
     return <>
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav className="navbar navbar-expand-lg navbar-light sticky-top shadow-sm" id="mainNav">
         <div className="container px-5">
             <a id="navbar-title" className="navbar-brand fw-bold" href="#page-top">UltraStar&nbsp;Play</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

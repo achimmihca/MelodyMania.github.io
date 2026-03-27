@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import type { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
 import { Mulish, Kanit, Roboto, Inter } from '@next/font/google'
+import KickstarterNotification from '../components/KickstarterNotification'
 
 // Load fonts
 const mulish = Mulish({
@@ -45,6 +46,7 @@ function MyApp({ Component, pageProps }: AppProps)
             }
         `}</style>
 
+        <KickstarterNotification />
         <Component {...pageProps} />
     </>
 }
