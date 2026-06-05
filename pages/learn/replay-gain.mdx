@@ -1,0 +1,29 @@
+import MdxLayoutComponent from '../../components/MdxLayoutComponent'
+
+# Replay Gain
+
+Replay Gain is a standard for volume normalization that calculates the perceived loudness of audio tracks and stores adjustment values in the metadata tags without modifying the original audio data. It ensures that all songs in your library play at a consistent volume level, so you don't have to reach for the volume knob between tracks.
+
+Melody Mania supports Replay Gain for volume normalization to provide a more comfortable listening experience.
+
+## Enabling Replay Gain
+
+Replay Gain is **off by default**. You can enable it in the **Sound Options** menu. The following options are available:
+
+*   **Off**: No volume normalization is applied.
+*   **Track**: Normalizes each track individually. Use this for mixed playlists or when shuffling songs to ensure every song has the same perceived loudness.
+*   **Album**: Normalizes an entire album as a single unit. This preserves the intentional volume dynamics between tracks on the same album (e.g., a quiet acoustic song remains quieter than a loud rock anthem on the same album).
+
+## How to apply Replay Gain to your library
+
+To use Replay Gain in Melody Mania, your audio files must first be analyzed and tagged with Replay Gain metadata.
+
+A professional and highly recommended tool for this is [foobar2000](https://www.foobar2000.org/) (Windows). It includes a built-in Replay Gain scanner that can process your entire music library.
+
+For more technical details and a comprehensive list of tools, you can refer to the [Hydrogenaudio ReplayGain Wiki](https://wiki.hydrogenaudio.org/index.php/ReplayGain), which is a well-established resource for audio enthusiasts.
+
+Another helpful guide for various platforms can be found on the [UltraStar Deluxe Wiki](https://github.com/UltraStar-Deluxe/USDX/wiki/Loudness-Normalization).
+
+export default ({ children }) => (
+    <MdxLayoutComponent>{children}</MdxLayoutComponent>
+);
