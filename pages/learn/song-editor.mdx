@@ -7,6 +7,9 @@ Melody Mania includes an editor that can be used to create a sing-along version 
 The following shows how to use the editor.
 
 ## Table of Content
+- [Recommended Settings](#recommended-settings)
+    - [Audio Latency Settings](#audio-latency-settings)
+    - [BPM Setting](#bpm-setting)
 - [AI Workflow](#ai-workflow)
 - [Create Song From Local Audio File](#create-song-from-local-audio-file)
 - [View Shortcuts and Controls](#view-shortcuts-and-controls)
@@ -33,6 +36,22 @@ The following shows how to use the editor.
 - [Change Video Offset](#change-video-offset)
 - [Navigate Position History](#navigate-position-history)
 - [Record Audio](#record-audio)
+
+## Recommended Settings
+
+The following names best practices for settings when working with the song editor.
+
+### Audio Latency Settings
+- Low-latency audio playback is especially important in the song editor for precise note positioning
+- You can optimize audio playback latency by changing the `DSP Buffer Size` option in `Settings > Develop > Performance and Effects`
+  - A restart is required after changing this option
+
+### BPM Song Property
+- An UltraStar song has a defined grid size to position notes. The property in the txt file is called `BPM`.
+  - NOTE: The `BPM` in an UltraStar txt file is not 'beat per minutes' but 'bars per minute in four-four time'. This means you have to multiply the value from the txt file with 4 to get the 'beats per minute'.
+- Lower BPM values means a rougher grid. Higher BPM values mean a more fine-grained grid.
+- You can click the corresponding button repeatedly to find the beats per minute of a song.
+<TutorialVideo src="/videos/song-editor/click-to-find-bpm.webm" />
 
 ## AI Workflow
 - The AI Workflow to create a song is as follows:
@@ -91,7 +110,6 @@ The following shows how to use the editor.
     - Model names include the two letter country code of the language, e.g., 'en' for English, 'de' for German, 'es' for Spanish, etc.
     - The model used is an ONNX export of a Nvidia NeMo Forced Aligner (NFA) model
 - To change the model, set the path to the onnx file in the left side settings of the song editor
-
 
 ## Change Playback Audio
 - You can select which audio should be played: the original music, vocals, instrumental, or your microphone recording
