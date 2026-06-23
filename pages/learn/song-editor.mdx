@@ -81,6 +81,11 @@ The following names best practices for settings when working with the song edito
 - Afterwards, lyrics alignment and pitch detection can be performed on the vocals audio
 <TutorialVideo src="/videos/song-editor/split-audio.webm" />
 
+### Change the Vocals Isolation Model
+- You can find other models for vocals isolation in the [sherpa-onnx documentation](https://k2-fsa.github.io/sherpa/onnx/source-separation/models.html)
+    - Set the `Model Id` option in the song editor accordingly to change the model. An app restart is required afterwards.
+    - The default model is `UVR_MDXNET_KARA_2`. This model has a good balance of result quality, model size, and runtime performance (even on CPU)
+- For example to use Spleeter instead of UVR, set the model id to `sherpa-onnx-spleeter-2stems-int8` and restart the app
 
 ## Pitch Detection
 - Click the button in the AI Workflow toolbar to analyze the pitch of the vocals audio.
