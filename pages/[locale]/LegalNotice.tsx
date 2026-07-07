@@ -34,7 +34,7 @@ const LegalNotice: NextPage = () => {
                     <h2>Kontakt</h2>
                     <p>Telefon: +49 1575-2873216<br />
                     E-Mail: email@melodymania.org</p>
-                    <p>Ust-IdNr.: DE 359614789</p>
+                    <p>Ust-IdNr.: DE359614789</p>
 
                     <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
                 </div>
