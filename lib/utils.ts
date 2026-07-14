@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import type { ParsedUrlQuery } from "querystring"
 
 interface Mapping<Key, Value>
 {
@@ -49,6 +50,34 @@ const doWithElement = (id: string, action: (element: HTMLElement) => void) =>
 const setInnerHtml = (id: string, innerHtml: string) =>
 {
     doWithElement(id, (element) => element.innerHTML = innerHtml)
+}
+
+const buildSteamStoreUrl = (query: ParsedUrlQuery = {}, defaultSource: string = "homepage"): string =>
+{
+    const params = new URLSearchParams()
+
+    const existingSource = typeof query.utm_source === "string" ? query.utm_source.trim() : ""
+    params.set("utm_source", existingSource ? `${defaultSource}_${existingSource}` : defaultSource)
+
+    Object.entries(query).forEach(([key, value]) =>
+    {
+        if (!key.startsWith("utm_") || key === "utm_source")
+        {
+            return
+        }
+
+        if (typeof value === "string")
+        {
+            params.set(key, value)
+        }
+        else if (Array.isArray(value) && value.length > 0)
+        {
+            params.set(key, value[0])
+        }
+    })
+
+    const queryString = params.toString()
+    return `https://store.steampowered.com/app/2394070/Melody_Mania${queryString ? `?${queryString}` : ""}`
 }
 
 const useTranslationUnescaped = (ns: string = "common"): { t: GetTranslationFunction } =>
@@ -120,4 +149,4 @@ interface GetTranslationFunction
     (i18nKey: string, options?: any): string
 }
 
-export { tryParseInt, getVerticalScrollPercentage, doWithElement, setInnerHtml, useTranslationUnescaped, useTranslationUnescaped as useUnescapedTranslation, useUnescapedTranslations }
+export { tryParseInt, getVerticalScrollPercentage, doWithElement, setInnerHtml, buildSteamStoreUrl, useTranslationUnescaped, useTranslationUnescaped as useUnescapedTranslation, useUnescapedTranslations }

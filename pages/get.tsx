@@ -1,2 +1,18 @@
-import { getCustomRedirect } from '../lib/redirect'
-export default getCustomRedirect('https://store.steampowered.com/app/2394070/Melody_Mania?utm_source=homepage_redirect')
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import { buildSteamStoreUrl } from '../lib/utils'
+
+const GetPage = () =>
+{
+    const router = useRouter()
+    const steamStoreUrl = buildSteamStoreUrl(router.query, 'homepage_redirect')
+
+    useEffect(() =>
+    {
+        router.replace(steamStoreUrl)
+    }, [router, steamStoreUrl])
+
+    return <></>
+}
+
+export default GetPage

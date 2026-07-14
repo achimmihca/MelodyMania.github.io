@@ -1,10 +1,13 @@
 import Image from "next/image"
-import {  useTranslationUnescaped } from "../lib/utils"
+import { useRouter } from "next/router"
+import { buildSteamStoreUrl, useTranslationUnescaped } from "../lib/utils"
 import { T } from "./T"
 
 const NewsletterSection = () =>
 {
+    const router = useRouter()
     const { t } = useTranslationUnescaped()
+    const steamStoreUrl = buildSteamStoreUrl(router.query)
     return <>
     <section id="newsletter" className="py-5 bg-light -stage-and-audience-background" style={{backgroundPosition: 'bottom'}}>
         <div className="row mx-5 justify-content-center">
@@ -34,7 +37,7 @@ const NewsletterSection = () =>
             {/* Buttons (Call to Action)  */}
             <div className="col-12 col-lg-5 mt-5">
                 <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                    <a className="btn btn-lg mb-2" href="https://store.steampowered.com/app/2394070/Melody_Mania?utm_source=homepage" rel="noreferrer" style={{position: 'relative', width: "300px", height: '80px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Steam-DownloadButton.svg" layout="fill" objectFit="contain" alt="Melody Mania on Steam button"/></a>
+                    <a className="btn btn-lg mb-2" href={steamStoreUrl} rel="noreferrer" style={{position: 'relative', width: "300px", height: '80px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Steam-DownloadButton.svg" layout="fill" objectFit="contain" alt="Melody Mania on Steam button"/></a>
                 </div>
                 <div className="d-flex flex-column flex-lg-row align-items-center">
                     <a className="btn btn-lg mb-2" href="https://play.google.com/store/apps/details?id=com.melodymania.MelodyManiaCompanion" target="_blank" rel="noreferrer" style={{position: 'relative', width: "300px", height: '80px', marginLeft: "5px", marginRight: "5px"}}><Image src="img/buttons/Google_Play_Store_badge_companion_app.svg" layout="fill" objectFit="contain" alt="Companion App on Google Play button"/></a>
