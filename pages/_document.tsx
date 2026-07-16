@@ -10,6 +10,15 @@ class MyDocument extends Document
     return (
       <Html lang={currentLocale}>
         <Head>
+          {/* Google Tag */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11181439825" />
+          <script dangerouslySetInnerHTML={{ __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11181439825');
+          ` }} />
+          {/* End Google Tag */}
           
           {/* Google Tag Manager */}
           <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -21,16 +30,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           {/* Event snippet for 'Click on Steam Store Link' conversion page */}
           <script dangerouslySetInnerHTML={{ __html: `function gtag_report_conversion(url, evt) {
+  evt.preventDefault();
+  console.log('clicked: ' + url);
+  
   var callback = function () {
     if (typeof(url) != 'undefined') {
       window.location = url;
+      console.log('callback reached: ' + url)
     }
   };
   gtag('event', 'conversion', {
       'send_to': 'AW-11181439825/J5XTCLuEldEcENH23NMp',
       'event_callback': callback
   });
-  evt.preventDefault();
   return false;
 }` }} />
           
