@@ -36,8 +36,8 @@ const FeatureOverviewSection = () =>
                     <div className="col-auto">
                         <ul className="item-symbol-mic">
                             {
-                                featureList.slice(0, featureList.length / 2).map(feature =>
-                                    <li><T i18nKey={ feature } /></li>
+                                featureList.slice(0, featureList.length / 2).map((feature, index) =>
+                                    <li key={`${feature}-${index}`}><T i18nKey={ feature } /></li>
                                 )
                             }
                         </ul>
@@ -45,8 +45,8 @@ const FeatureOverviewSection = () =>
                     <div className="col-auto">
                         <ul className="item-symbol-mic">
                         {
-                            featureList.slice(featureList.length / 2, featureList.length).map(feature =>
-                                <li><T i18nKey={ feature } /></li>
+                            featureList.slice(featureList.length / 2, featureList.length).map((feature, index) =>
+                                <li key={`${feature}-${index}`}><T i18nKey={ feature } /></li>
                             )
                         }
                         </ul>

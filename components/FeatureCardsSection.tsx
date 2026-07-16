@@ -52,8 +52,8 @@ const FeatureCardsSection = () =>
           <div className="container-fluid">
             <div className="row">
               {
-                featureCards.map(featureCard =>
-                  <FeatureItem icon={featureCard.icon} title={t(featureCard.title)}>
+                featureCards.map((featureCard, index) =>
+                  <FeatureItem key={`${featureCard.title}-${index}`} icon={featureCard.icon} title={t(featureCard.title)}>
                     <T i18nKey={`${featureCard.title}_detail`} />
                   </FeatureItem>)
               }
