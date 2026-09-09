@@ -27,8 +27,8 @@ const KickstarterNotification = () => {
         if (translatedText === translationKey) {
             const isGerman = router.asPath.startsWith('/de/') || router.query.locale === 'de'
             return isGerman 
-                ? "🚀 Jetzt auf Kickstarter! Hilf uns, das ultimative Karaoke-Erlebnis zum Leben zu erwecken!" 
-                : "🚀 Now on Kickstarter! Back us to bring the ultimate karaoke experience to life!"
+                ? "🎉 Wir haben es geschafft! Danke an alle Unterstützer!" 
+                : "🎉 We made it! Thank you to all our backers!"
         }
         return translatedText
     }
